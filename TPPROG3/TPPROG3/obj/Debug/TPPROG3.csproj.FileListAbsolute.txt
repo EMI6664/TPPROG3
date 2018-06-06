@@ -20,3 +20,8 @@ C:\Users\Emilio\Documents\TPPROG3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.cspr
 C:\Users\Emilio\Documents\TPPROG3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.exe
 C:\Users\Emilio\Documents\TPPROG3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.pdb
 C:\Users\Emilio\Documents\TP Programacion 3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.AcercaDe.resources
+C:\Users\Emilio\Documents\TPPROG3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.ListadoEquipos.resources
+C:\Users\Emilio\Documents\TPPROG3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.BuscarPorNumEquipo.resources
+C:\Users\Emilio\Documents\TPPROG3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.BuscarPorNumSerie.resources
+C:\Users\Emilio\Documents\TPPROG3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.ModificarDatosEquipo.resources
+C:\Users\Emilio\Documents\TPPROG3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.AgregarEquipo.resources

@@ -51,19 +51,64 @@
     <Compile Include="AcercaDe.Designer.cs">
       <DependentUpon>AcercaDe.cs</DependentUpon>
     </Compile>
+    <Compile Include="AgregarEquipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarEquipo.Designer.cs">
+      <DependentUpon>AgregarEquipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarPorNumEquipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarPorNumEquipo.Designer.cs">
+      <DependentUpon>BuscarPorNumEquipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarPorNumSerie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarPorNumSerie.Designer.cs">
+      <DependentUpon>BuscarPorNumSerie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListadoEquipos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListadoEquipos.Designer.cs">
+      <DependentUpon>ListadoEquipos.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MenuPrincipal.Designer.cs">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="ModificarDatosEquipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarDatosEquipo.Designer.cs">
+      <DependentUpon>ModificarDatosEquipo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AcercaDe.resx">
       <DependentUpon>AcercaDe.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AgregarEquipo.resx">
+      <DependentUpon>AgregarEquipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarPorNumEquipo.resx">
+      <DependentUpon>BuscarPorNumEquipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarPorNumSerie.resx">
+      <DependentUpon>BuscarPorNumSerie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListadoEquipos.resx">
+      <DependentUpon>ListadoEquipos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarDatosEquipo.resx">
+      <DependentUpon>ModificarDatosEquipo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

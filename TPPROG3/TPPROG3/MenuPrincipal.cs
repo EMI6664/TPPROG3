@@ -32,30 +32,37 @@ namespace TPPROG3
    AcercaDe Acerca = new AcercaDe();
    Acerca.Show();
   }
-
-  private void agregarEquipoToolStripMenuItem_Click(object sender, EventArgs e)
+  ///////////////////////////////////
+  ///Menu Equipos///////////////////
+  private void modificarDatosEquipo_Click(object sender, EventArgs e)
   {
-
+   ModificarDatosEquipo ModificarEquipo = new ModificarDatosEquipo();
+   ModificarEquipo.Show();
   }
 
-  private void modificarDatosToolStripMenuItem1_Click(object sender, EventArgs e)
+  private void agregarEquipo_Click(object sender, EventArgs e)
   {
-
+   AgregarEquipo AgregarEquipoNuevo = new AgregarEquipo();
+   AgregarEquipoNuevo.Show();
   }
 
-  private void porIDToolStripMenuItem_Click(object sender, EventArgs e)
+  private void porNumEquipo_Click(object sender, EventArgs e)
   {
-
+   BuscarPorNumEquipo BusquedaNumEquipo = new BuscarPorNumEquipo();
+   BusquedaNumEquipo.Show();
   }
 
-  private void porNDeSerieToolStripMenuItem_Click(object sender, EventArgs e)
+  private void porNDeSerie_Click(object sender, EventArgs e)
   {
-
+   BuscarPorNumSerie BusquedaNumSerie = new BuscarPorNumSerie();
+   BusquedaNumSerie.Show();
   }
 
-  private void verListadoToolStripMenuItem1_Click(object sender, EventArgs e)
+  private void verListadoEquipos_Click(object sender, EventArgs e)
   {
-
+   ListadoEquipos Equipos = new ListadoEquipos();
+   Equipos.Show();
   }
+  //////////////////////////////////////
  }
 }
