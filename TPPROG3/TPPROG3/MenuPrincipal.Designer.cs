@@ -67,6 +67,9 @@
    this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
    this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
    this.manualDeUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+   this.agregarQuitarMarcasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+   this.agregarQuitarModelosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+   this.agregarQuitarTiposDeEquipoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
    this.mnstp_principal.SuspendLayout();
    this.SuspendLayout();
    // 
@@ -115,13 +118,13 @@
    // agregarClienteToolStripMenuItem
    // 
    this.agregarClienteToolStripMenuItem.Name = "agregarClienteToolStripMenuItem";
-   this.agregarClienteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+   this.agregarClienteToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
    this.agregarClienteToolStripMenuItem.Text = "Agregar Cliente";
    // 
    // modificarDatosToolStripMenuItem
    // 
    this.modificarDatosToolStripMenuItem.Name = "modificarDatosToolStripMenuItem";
-   this.modificarDatosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+   this.modificarDatosToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
    this.modificarDatosToolStripMenuItem.Text = "Modificar Datos";
    // 
    // buscarClienteToolStripMenuItem
@@ -130,7 +133,7 @@
             this.porNombreToolStripMenuItem,
             this.porNDeDNIToolStripMenuItem});
    this.buscarClienteToolStripMenuItem.Name = "buscarClienteToolStripMenuItem";
-   this.buscarClienteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+   this.buscarClienteToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
    this.buscarClienteToolStripMenuItem.Text = "Buscar Cliente/s";
    // 
    // porNombreToolStripMenuItem
@@ -148,7 +151,7 @@
    // verListadoToolStripMenuItem
    // 
    this.verListadoToolStripMenuItem.Name = "verListadoToolStripMenuItem";
-   this.verListadoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+   this.verListadoToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
    this.verListadoToolStripMenuItem.Text = "Ver Listado";
    // 
    // equiposToolStripMenuItem
@@ -157,7 +160,10 @@
             this.agregarEquipo,
             this.modificarDatosEquipo,
             this.buscarEquipoToolStripMenuItem,
-            this.verListadoEquipos});
+            this.verListadoEquipos,
+            this.agregarQuitarMarcasToolStripMenuItem,
+            this.agregarQuitarModelosToolStripMenuItem,
+            this.agregarQuitarTiposDeEquipoToolStripMenuItem});
    this.equiposToolStripMenuItem.Name = "equiposToolStripMenuItem";
    this.equiposToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
    this.equiposToolStripMenuItem.Text = "Equipos";
@@ -165,14 +171,14 @@
    // agregarEquipo
    // 
    this.agregarEquipo.Name = "agregarEquipo";
-   this.agregarEquipo.Size = new System.Drawing.Size(180, 22);
+   this.agregarEquipo.Size = new System.Drawing.Size(243, 22);
    this.agregarEquipo.Text = "Agregar Equipo";
    this.agregarEquipo.Click += new System.EventHandler(this.agregarEquipo_Click);
    // 
    // modificarDatosEquipo
    // 
    this.modificarDatosEquipo.Name = "modificarDatosEquipo";
-   this.modificarDatosEquipo.Size = new System.Drawing.Size(180, 22);
+   this.modificarDatosEquipo.Size = new System.Drawing.Size(243, 22);
    this.modificarDatosEquipo.Text = "Modificar Datos";
    this.modificarDatosEquipo.Click += new System.EventHandler(this.modificarDatosEquipo_Click);
    // 
@@ -182,27 +188,27 @@
             this.porNumEquipo,
             this.porNDeSerie});
    this.buscarEquipoToolStripMenuItem.Name = "buscarEquipoToolStripMenuItem";
-   this.buscarEquipoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+   this.buscarEquipoToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
    this.buscarEquipoToolStripMenuItem.Text = "Buscar Equipo/s";
    // 
    // porNumEquipo
    // 
    this.porNumEquipo.Name = "porNumEquipo";
-   this.porNumEquipo.Size = new System.Drawing.Size(180, 22);
+   this.porNumEquipo.Size = new System.Drawing.Size(166, 22);
    this.porNumEquipo.Text = "Por N° De Equipo";
    this.porNumEquipo.Click += new System.EventHandler(this.porNumEquipo_Click);
    // 
    // porNDeSerie
    // 
    this.porNDeSerie.Name = "porNDeSerie";
-   this.porNDeSerie.Size = new System.Drawing.Size(180, 22);
+   this.porNDeSerie.Size = new System.Drawing.Size(166, 22);
    this.porNDeSerie.Text = "Por N° De Serie";
    this.porNDeSerie.Click += new System.EventHandler(this.porNDeSerie_Click);
    // 
    // verListadoEquipos
    // 
    this.verListadoEquipos.Name = "verListadoEquipos";
-   this.verListadoEquipos.Size = new System.Drawing.Size(180, 22);
+   this.verListadoEquipos.Size = new System.Drawing.Size(243, 22);
    this.verListadoEquipos.Text = "Ver Listado";
    this.verListadoEquipos.Click += new System.EventHandler(this.verListadoEquipos_Click);
    // 
@@ -219,8 +225,8 @@
    // agregarRepuestoToolStripMenuItem
    // 
    this.agregarRepuestoToolStripMenuItem.Name = "agregarRepuestoToolStripMenuItem";
-   this.agregarRepuestoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-   this.agregarRepuestoToolStripMenuItem.Text = "Agregar Repuesto";
+   this.agregarRepuestoToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
+   this.agregarRepuestoToolStripMenuItem.Text = "Agregar/Quitar Repuesto";
    // 
    // buscarRepuestoToolStripMenuItem
    // 
@@ -228,25 +234,25 @@
             this.porIDToolStripMenuItem1,
             this.porNombreToolStripMenuItem1});
    this.buscarRepuestoToolStripMenuItem.Name = "buscarRepuestoToolStripMenuItem";
-   this.buscarRepuestoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+   this.buscarRepuestoToolStripMenuItem.Size = new System.Drawing.Size(206, 22);
    this.buscarRepuestoToolStripMenuItem.Text = "Buscar Repuesto/s";
    // 
    // porIDToolStripMenuItem1
    // 
    this.porIDToolStripMenuItem1.Name = "porIDToolStripMenuItem1";
-   this.porIDToolStripMenuItem1.Size = new System.Drawing.Size(157, 22);
+   this.porIDToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
    this.porIDToolStripMenuItem1.Text = "Por Codigo";
    // 
    // porNombreToolStripMenuItem1
    // 
    this.porNombreToolStripMenuItem1.Name = "porNombreToolStripMenuItem1";
-   this.porNombreToolStripMenuItem1.Size = new System.Drawing.Size(157, 22);
+   this.porNombreToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
    this.porNombreToolStripMenuItem1.Text = "Por Descripcion";
    // 
    // verListadoToolStripMenuItem2
    // 
    this.verListadoToolStripMenuItem2.Name = "verListadoToolStripMenuItem2";
-   this.verListadoToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+   this.verListadoToolStripMenuItem2.Size = new System.Drawing.Size(206, 22);
    this.verListadoToolStripMenuItem2.Text = "Ver Listado";
    // 
    // serviceToolStripMenuItem
@@ -262,7 +268,7 @@
    // ingresarServiceToolStripMenuItem
    // 
    this.ingresarServiceToolStripMenuItem.Name = "ingresarServiceToolStripMenuItem";
-   this.ingresarServiceToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+   this.ingresarServiceToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
    this.ingresarServiceToolStripMenuItem.Text = "Ingresar Service";
    // 
    // buscarServiceToolStripMenuItem
@@ -272,7 +278,7 @@
             this.porClienteToolStripMenuItem,
             this.porFechaToolStripMenuItem});
    this.buscarServiceToolStripMenuItem.Name = "buscarServiceToolStripMenuItem";
-   this.buscarServiceToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+   this.buscarServiceToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
    this.buscarServiceToolStripMenuItem.Text = "Buscar Service";
    // 
    // porNDeServiceToolStripMenuItem
@@ -296,7 +302,7 @@
    // verListadoToolStripMenuItem3
    // 
    this.verListadoToolStripMenuItem3.Name = "verListadoToolStripMenuItem3";
-   this.verListadoToolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
+   this.verListadoToolStripMenuItem3.Size = new System.Drawing.Size(156, 22);
    this.verListadoToolStripMenuItem3.Text = "Ver Listado";
    // 
    // configuracionToolStripMenuItem
@@ -356,6 +362,27 @@
    this.manualDeUsuarioToolStripMenuItem.Name = "manualDeUsuarioToolStripMenuItem";
    this.manualDeUsuarioToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
    this.manualDeUsuarioToolStripMenuItem.Text = "Manual De Usuario";
+   // 
+   // agregarQuitarMarcasToolStripMenuItem
+   // 
+   this.agregarQuitarMarcasToolStripMenuItem.Name = "agregarQuitarMarcasToolStripMenuItem";
+   this.agregarQuitarMarcasToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
+   this.agregarQuitarMarcasToolStripMenuItem.Text = "Agregar/Quitar Marcas";
+   this.agregarQuitarMarcasToolStripMenuItem.Click += new System.EventHandler(this.agregarQuitarMarcasToolStripMenuItem_Click);
+   // 
+   // agregarQuitarModelosToolStripMenuItem
+   // 
+   this.agregarQuitarModelosToolStripMenuItem.Name = "agregarQuitarModelosToolStripMenuItem";
+   this.agregarQuitarModelosToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
+   this.agregarQuitarModelosToolStripMenuItem.Text = "Agregar/Quitar Modelos";
+   this.agregarQuitarModelosToolStripMenuItem.Click += new System.EventHandler(this.agregarQuitarModelosToolStripMenuItem_Click);
+   // 
+   // agregarQuitarTiposDeEquipoToolStripMenuItem
+   // 
+   this.agregarQuitarTiposDeEquipoToolStripMenuItem.Name = "agregarQuitarTiposDeEquipoToolStripMenuItem";
+   this.agregarQuitarTiposDeEquipoToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
+   this.agregarQuitarTiposDeEquipoToolStripMenuItem.Text = "Agregar/Quitar Tipos De Equipo";
+   this.agregarQuitarTiposDeEquipoToolStripMenuItem.Click += new System.EventHandler(this.agregarQuitarTiposDeEquipoToolStripMenuItem_Click);
    // 
    // menu_principal
    // 
@@ -417,6 +444,9 @@
   private System.Windows.Forms.ToolStripMenuItem manualDeUsuarioToolStripMenuItem;
   private System.Windows.Forms.ToolStripMenuItem agregarUsuarioToolStripMenuItem;
   private System.Windows.Forms.ToolStripMenuItem verListadoToolStripMenuItem4;
+  private System.Windows.Forms.ToolStripMenuItem agregarQuitarMarcasToolStripMenuItem;
+  private System.Windows.Forms.ToolStripMenuItem agregarQuitarModelosToolStripMenuItem;
+  private System.Windows.Forms.ToolStripMenuItem agregarQuitarTiposDeEquipoToolStripMenuItem;
  }
 }
 

@@ -63,6 +63,24 @@ namespace TPPROG3
    ListadoEquipos Equipos = new ListadoEquipos();
    Equipos.Show();
   }
+
+  private void agregarQuitarMarcasToolStripMenuItem_Click(object sender, EventArgs e)
+  {
+   Marcas Marca = new Marcas();
+   Marca.Show();
+  }
+
+  private void agregarQuitarModelosToolStripMenuItem_Click(object sender, EventArgs e)
+  {
+   Modelos Modelo = new Modelos();
+   Modelo.Show();
+  }
+
+  private void agregarQuitarTiposDeEquipoToolStripMenuItem_Click(object sender, EventArgs e)
+  {
+   TiposDeEquipo Tipo = new TiposDeEquipo();
+   Tipo.Show();
+  }
   //////////////////////////////////////
  }
 }

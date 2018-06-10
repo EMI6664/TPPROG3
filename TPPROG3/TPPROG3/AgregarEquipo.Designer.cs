@@ -34,11 +34,11 @@
    this.lbl_tipo = new System.Windows.Forms.Label();
    this.lbl_dni_dueño = new System.Windows.Forms.Label();
    this.txt_numero_serie = new System.Windows.Forms.TextBox();
-   this.txt_marca = new System.Windows.Forms.TextBox();
-   this.txt_dni_dueño = new System.Windows.Forms.TextBox();
-   this.txt_tipo = new System.Windows.Forms.TextBox();
-   this.txt_modelo = new System.Windows.Forms.TextBox();
    this.btn_agregar = new System.Windows.Forms.Button();
+   this.cmbx_modelo = new System.Windows.Forms.ComboBox();
+   this.cmbx_marca = new System.Windows.Forms.ComboBox();
+   this.cmbx_dni = new System.Windows.Forms.ComboBox();
+   this.cmbx_tipo = new System.Windows.Forms.ComboBox();
    this.dataGridView1 = new System.Windows.Forms.DataGridView();
    ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
    this.SuspendLayout();
@@ -95,34 +95,6 @@
    this.txt_numero_serie.Size = new System.Drawing.Size(313, 20);
    this.txt_numero_serie.TabIndex = 6;
    // 
-   // txt_marca
-   // 
-   this.txt_marca.Location = new System.Drawing.Point(109, 45);
-   this.txt_marca.Name = "txt_marca";
-   this.txt_marca.Size = new System.Drawing.Size(313, 20);
-   this.txt_marca.TabIndex = 7;
-   // 
-   // txt_dni_dueño
-   // 
-   this.txt_dni_dueño.Location = new System.Drawing.Point(534, 45);
-   this.txt_dni_dueño.Name = "txt_dni_dueño";
-   this.txt_dni_dueño.Size = new System.Drawing.Size(254, 20);
-   this.txt_dni_dueño.TabIndex = 8;
-   // 
-   // txt_tipo
-   // 
-   this.txt_tipo.Location = new System.Drawing.Point(533, 20);
-   this.txt_tipo.Name = "txt_tipo";
-   this.txt_tipo.Size = new System.Drawing.Size(255, 20);
-   this.txt_tipo.TabIndex = 9;
-   // 
-   // txt_modelo
-   // 
-   this.txt_modelo.Location = new System.Drawing.Point(109, 75);
-   this.txt_modelo.Name = "txt_modelo";
-   this.txt_modelo.Size = new System.Drawing.Size(313, 20);
-   this.txt_modelo.TabIndex = 10;
-   // 
    // btn_agregar
    // 
    this.btn_agregar.Location = new System.Drawing.Point(15, 384);
@@ -131,6 +103,38 @@
    this.btn_agregar.TabIndex = 12;
    this.btn_agregar.Text = "Agregar Equipo";
    this.btn_agregar.UseVisualStyleBackColor = true;
+   // 
+   // cmbx_modelo
+   // 
+   this.cmbx_modelo.FormattingEnabled = true;
+   this.cmbx_modelo.Location = new System.Drawing.Point(109, 75);
+   this.cmbx_modelo.Name = "cmbx_modelo";
+   this.cmbx_modelo.Size = new System.Drawing.Size(313, 21);
+   this.cmbx_modelo.TabIndex = 14;
+   // 
+   // cmbx_marca
+   // 
+   this.cmbx_marca.FormattingEnabled = true;
+   this.cmbx_marca.Location = new System.Drawing.Point(109, 48);
+   this.cmbx_marca.Name = "cmbx_marca";
+   this.cmbx_marca.Size = new System.Drawing.Size(313, 21);
+   this.cmbx_marca.TabIndex = 15;
+   // 
+   // cmbx_dni
+   // 
+   this.cmbx_dni.FormattingEnabled = true;
+   this.cmbx_dni.Location = new System.Drawing.Point(547, 48);
+   this.cmbx_dni.Name = "cmbx_dni";
+   this.cmbx_dni.Size = new System.Drawing.Size(241, 21);
+   this.cmbx_dni.TabIndex = 16;
+   // 
+   // cmbx_tipo
+   // 
+   this.cmbx_tipo.FormattingEnabled = true;
+   this.cmbx_tipo.Location = new System.Drawing.Point(547, 20);
+   this.cmbx_tipo.Name = "cmbx_tipo";
+   this.cmbx_tipo.Size = new System.Drawing.Size(241, 21);
+   this.cmbx_tipo.TabIndex = 17;
    // 
    // dataGridView1
    // 
@@ -147,12 +151,12 @@
    this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
    this.BackColor = System.Drawing.Color.DarkGray;
    this.ClientSize = new System.Drawing.Size(800, 425);
+   this.Controls.Add(this.cmbx_tipo);
+   this.Controls.Add(this.cmbx_dni);
+   this.Controls.Add(this.cmbx_marca);
+   this.Controls.Add(this.cmbx_modelo);
    this.Controls.Add(this.dataGridView1);
    this.Controls.Add(this.btn_agregar);
-   this.Controls.Add(this.txt_modelo);
-   this.Controls.Add(this.txt_tipo);
-   this.Controls.Add(this.txt_dni_dueño);
-   this.Controls.Add(this.txt_marca);
    this.Controls.Add(this.txt_numero_serie);
    this.Controls.Add(this.lbl_dni_dueño);
    this.Controls.Add(this.lbl_tipo);
@@ -177,11 +181,11 @@
   private System.Windows.Forms.Label lbl_tipo;
   private System.Windows.Forms.Label lbl_dni_dueño;
   private System.Windows.Forms.TextBox txt_numero_serie;
-  private System.Windows.Forms.TextBox txt_marca;
-  private System.Windows.Forms.TextBox txt_dni_dueño;
-  private System.Windows.Forms.TextBox txt_tipo;
-  private System.Windows.Forms.TextBox txt_modelo;
   private System.Windows.Forms.Button btn_agregar;
+  private System.Windows.Forms.ComboBox cmbx_modelo;
+  private System.Windows.Forms.ComboBox cmbx_marca;
+  private System.Windows.Forms.ComboBox cmbx_dni;
+  private System.Windows.Forms.ComboBox cmbx_tipo;
   private System.Windows.Forms.DataGridView dataGridView1;
  }
 }
