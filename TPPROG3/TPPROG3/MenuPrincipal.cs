@@ -81,6 +81,37 @@ namespace TPPROG3
    TiposDeEquipo Tipo = new TiposDeEquipo();
    Tipo.Show();
   }
-  //////////////////////////////////////
+  private void porMarcaToolStripMenuItem_Click(object sender, EventArgs e)
+  {
+   BuscarPorMarca BuscarMarca = new BuscarPorMarca();
+   BuscarMarca.Show();
+  }
+
+  private void porModeloToolStripMenuItem_Click(object sender, EventArgs e)
+  {
+   BuscarPorModelo BuscarModelo = new BuscarPorModelo();
+   BuscarModelo.Show();
+  }
+
+  private void porTipoToolStripMenuItem_Click(object sender, EventArgs e)
+  {
+   BuscarPorTipoDeEquipo BuscarTipo = new BuscarPorTipoDeEquipo();
+   BuscarTipo.Show();
+  }
+  ///////////////////////////////////
+  
+  /////Usuarios//////////////
+  private void iniciarSesionToolStripMenuItem_Click(object sender, EventArgs e)
+  {
+   InicioSesion Sesion = new InicioSesion();
+   Sesion.Show();
+  }
+
+  private void administrarUsuariosToolStripMenuItem_Click(object sender, EventArgs e)
+  {
+   AdministrarUsuarios Usuarios = new AdministrarUsuarios();
+   Usuarios.Show();
+  }
+  //////////////////////////
  }
 }

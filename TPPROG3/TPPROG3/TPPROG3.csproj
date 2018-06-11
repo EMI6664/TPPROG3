@@ -51,11 +51,29 @@
     <Compile Include="AcercaDe.Designer.cs">
       <DependentUpon>AcercaDe.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdministrarUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdministrarUsuarios.Designer.cs">
+      <DependentUpon>AdministrarUsuarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="AgregarEquipo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="AgregarEquipo.Designer.cs">
       <DependentUpon>AgregarEquipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarPorMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarPorMarca.Designer.cs">
+      <DependentUpon>BuscarPorMarca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarPorModelo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarPorModelo.Designer.cs">
+      <DependentUpon>BuscarPorModelo.cs</DependentUpon>
     </Compile>
     <Compile Include="BuscarPorNumEquipo.cs">
       <SubType>Form</SubType>
@@ -68,6 +86,18 @@
     </Compile>
     <Compile Include="BuscarPorNumSerie.Designer.cs">
       <DependentUpon>BuscarPorNumSerie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarPorTipoDeEquipo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarPorTipoDeEquipo.Designer.cs">
+      <DependentUpon>BuscarPorTipoDeEquipo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InicioSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InicioSesion.Designer.cs">
+      <DependentUpon>InicioSesion.cs</DependentUpon>
     </Compile>
     <Compile Include="ListadoEquipos.cs">
       <SubType>Form</SubType>
@@ -110,14 +140,29 @@
     <EmbeddedResource Include="AcercaDe.resx">
       <DependentUpon>AcercaDe.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AdministrarUsuarios.resx">
+      <DependentUpon>AdministrarUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AgregarEquipo.resx">
       <DependentUpon>AgregarEquipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarPorMarca.resx">
+      <DependentUpon>BuscarPorMarca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarPorModelo.resx">
+      <DependentUpon>BuscarPorModelo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BuscarPorNumEquipo.resx">
       <DependentUpon>BuscarPorNumEquipo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BuscarPorNumSerie.resx">
       <DependentUpon>BuscarPorNumSerie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarPorTipoDeEquipo.resx">
+      <DependentUpon>BuscarPorTipoDeEquipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InicioSesion.resx">
+      <DependentUpon>InicioSesion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListadoEquipos.resx">
       <DependentUpon>ListadoEquipos.cs</DependentUpon>

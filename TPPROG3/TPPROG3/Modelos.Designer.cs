@@ -60,6 +60,7 @@
    this.btn_agregar.TabIndex = 2;
    this.btn_agregar.Text = "Agregar Modelo";
    this.btn_agregar.UseVisualStyleBackColor = true;
+   this.btn_agregar.Click += new System.EventHandler(this.btn_agregar_Click);
    // 
    // btn_quitar
    // 
@@ -93,6 +94,7 @@
    this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
    this.MaximizeBox = false;
    this.Name = "Modelos";
+   this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
    this.Text = "Modelos";
    ((System.ComponentModel.ISupportInitialize)(this.grd_datos)).EndInit();
    this.ResumeLayout(false);

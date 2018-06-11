@@ -29,32 +29,32 @@
   private void InitializeComponent()
   {
    this.gbx_datos_equipo = new System.Windows.Forms.GroupBox();
-   this.lbl_num_equipo = new System.Windows.Forms.Label();
-   this.lbl_num_serie = new System.Windows.Forms.Label();
-   this.lbl_marca = new System.Windows.Forms.Label();
-   this.lbl_modelo = new System.Windows.Forms.Label();
-   this.lbl_tipo_equipo = new System.Windows.Forms.Label();
+   this.txt_numero_equipo = new System.Windows.Forms.TextBox();
+   this.txt_numero_serie = new System.Windows.Forms.TextBox();
+   this.txt_marca = new System.Windows.Forms.TextBox();
+   this.txt_dni = new System.Windows.Forms.TextBox();
+   this.txt_tipo = new System.Windows.Forms.TextBox();
+   this.txt_modelo = new System.Windows.Forms.TextBox();
    this.lbl_dni_dueño = new System.Windows.Forms.Label();
-   this.textBox1 = new System.Windows.Forms.TextBox();
-   this.textBox2 = new System.Windows.Forms.TextBox();
-   this.textBox3 = new System.Windows.Forms.TextBox();
-   this.textBox4 = new System.Windows.Forms.TextBox();
-   this.textBox5 = new System.Windows.Forms.TextBox();
-   this.textBox6 = new System.Windows.Forms.TextBox();
-   this.dataGridView1 = new System.Windows.Forms.DataGridView();
+   this.lbl_tipo_equipo = new System.Windows.Forms.Label();
+   this.lbl_modelo = new System.Windows.Forms.Label();
+   this.lbl_marca = new System.Windows.Forms.Label();
+   this.lbl_num_serie = new System.Windows.Forms.Label();
+   this.lbl_num_equipo = new System.Windows.Forms.Label();
+   this.grd_datos = new System.Windows.Forms.DataGridView();
    this.btn_asentar_cambios = new System.Windows.Forms.Button();
    this.gbx_datos_equipo.SuspendLayout();
-   ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+   ((System.ComponentModel.ISupportInitialize)(this.grd_datos)).BeginInit();
    this.SuspendLayout();
    // 
    // gbx_datos_equipo
    // 
-   this.gbx_datos_equipo.Controls.Add(this.textBox1);
-   this.gbx_datos_equipo.Controls.Add(this.textBox2);
-   this.gbx_datos_equipo.Controls.Add(this.textBox3);
-   this.gbx_datos_equipo.Controls.Add(this.textBox4);
-   this.gbx_datos_equipo.Controls.Add(this.textBox5);
-   this.gbx_datos_equipo.Controls.Add(this.textBox6);
+   this.gbx_datos_equipo.Controls.Add(this.txt_numero_equipo);
+   this.gbx_datos_equipo.Controls.Add(this.txt_numero_serie);
+   this.gbx_datos_equipo.Controls.Add(this.txt_marca);
+   this.gbx_datos_equipo.Controls.Add(this.txt_dni);
+   this.gbx_datos_equipo.Controls.Add(this.txt_tipo);
+   this.gbx_datos_equipo.Controls.Add(this.txt_modelo);
    this.gbx_datos_equipo.Controls.Add(this.lbl_dni_dueño);
    this.gbx_datos_equipo.Controls.Add(this.lbl_tipo_equipo);
    this.gbx_datos_equipo.Controls.Add(this.lbl_modelo);
@@ -68,50 +68,47 @@
    this.gbx_datos_equipo.TabStop = false;
    this.gbx_datos_equipo.Text = "Datos Del Equipo Seleccionado";
    // 
-   // lbl_num_equipo
+   // txt_numero_equipo
    // 
-   this.lbl_num_equipo.AutoSize = true;
-   this.lbl_num_equipo.Location = new System.Drawing.Point(6, 20);
-   this.lbl_num_equipo.Name = "lbl_num_equipo";
-   this.lbl_num_equipo.Size = new System.Drawing.Size(100, 13);
-   this.lbl_num_equipo.TabIndex = 0;
-   this.lbl_num_equipo.Text = "Numero De Equipo:";
+   this.txt_numero_equipo.Location = new System.Drawing.Point(112, 17);
+   this.txt_numero_equipo.Name = "txt_numero_equipo";
+   this.txt_numero_equipo.Size = new System.Drawing.Size(271, 20);
+   this.txt_numero_equipo.TabIndex = 1;
    // 
-   // lbl_num_serie
+   // txt_numero_serie
    // 
-   this.lbl_num_serie.AutoSize = true;
-   this.lbl_num_serie.Location = new System.Drawing.Point(6, 46);
-   this.lbl_num_serie.Name = "lbl_num_serie";
-   this.lbl_num_serie.Size = new System.Drawing.Size(91, 13);
-   this.lbl_num_serie.TabIndex = 1;
-   this.lbl_num_serie.Text = "Numero De Serie:";
+   this.txt_numero_serie.Location = new System.Drawing.Point(112, 43);
+   this.txt_numero_serie.Name = "txt_numero_serie";
+   this.txt_numero_serie.Size = new System.Drawing.Size(271, 20);
+   this.txt_numero_serie.TabIndex = 2;
    // 
-   // lbl_marca
+   // txt_marca
    // 
-   this.lbl_marca.AutoSize = true;
-   this.lbl_marca.Location = new System.Drawing.Point(6, 72);
-   this.lbl_marca.Name = "lbl_marca";
-   this.lbl_marca.Size = new System.Drawing.Size(40, 13);
-   this.lbl_marca.TabIndex = 2;
-   this.lbl_marca.Text = "Marca:";
+   this.txt_marca.Location = new System.Drawing.Point(112, 69);
+   this.txt_marca.Name = "txt_marca";
+   this.txt_marca.Size = new System.Drawing.Size(271, 20);
+   this.txt_marca.TabIndex = 3;
    // 
-   // lbl_modelo
+   // txt_dni
    // 
-   this.lbl_modelo.AutoSize = true;
-   this.lbl_modelo.Location = new System.Drawing.Point(389, 17);
-   this.lbl_modelo.Name = "lbl_modelo";
-   this.lbl_modelo.Size = new System.Drawing.Size(45, 13);
-   this.lbl_modelo.TabIndex = 3;
-   this.lbl_modelo.Text = "Modelo:";
+   this.txt_dni.Location = new System.Drawing.Point(479, 69);
+   this.txt_dni.Name = "txt_dni";
+   this.txt_dni.Size = new System.Drawing.Size(291, 20);
+   this.txt_dni.TabIndex = 4;
    // 
-   // lbl_tipo_equipo
+   // txt_tipo
    // 
-   this.lbl_tipo_equipo.AutoSize = true;
-   this.lbl_tipo_equipo.Location = new System.Drawing.Point(389, 43);
-   this.lbl_tipo_equipo.Name = "lbl_tipo_equipo";
-   this.lbl_tipo_equipo.Size = new System.Drawing.Size(84, 13);
-   this.lbl_tipo_equipo.TabIndex = 4;
-   this.lbl_tipo_equipo.Text = "Tipo De Equipo:";
+   this.txt_tipo.Location = new System.Drawing.Point(479, 43);
+   this.txt_tipo.Name = "txt_tipo";
+   this.txt_tipo.Size = new System.Drawing.Size(291, 20);
+   this.txt_tipo.TabIndex = 5;
+   // 
+   // txt_modelo
+   // 
+   this.txt_modelo.Location = new System.Drawing.Point(479, 14);
+   this.txt_modelo.Name = "txt_modelo";
+   this.txt_modelo.Size = new System.Drawing.Size(291, 20);
+   this.txt_modelo.TabIndex = 6;
    // 
    // lbl_dni_dueño
    // 
@@ -122,55 +119,59 @@
    this.lbl_dni_dueño.TabIndex = 5;
    this.lbl_dni_dueño.Text = "DNI Del Dueño:";
    // 
-   // textBox1
+   // lbl_tipo_equipo
    // 
-   this.textBox1.Location = new System.Drawing.Point(112, 17);
-   this.textBox1.Name = "textBox1";
-   this.textBox1.Size = new System.Drawing.Size(271, 20);
-   this.textBox1.TabIndex = 1;
+   this.lbl_tipo_equipo.AutoSize = true;
+   this.lbl_tipo_equipo.Location = new System.Drawing.Point(389, 43);
+   this.lbl_tipo_equipo.Name = "lbl_tipo_equipo";
+   this.lbl_tipo_equipo.Size = new System.Drawing.Size(84, 13);
+   this.lbl_tipo_equipo.TabIndex = 4;
+   this.lbl_tipo_equipo.Text = "Tipo De Equipo:";
    // 
-   // textBox2
+   // lbl_modelo
    // 
-   this.textBox2.Location = new System.Drawing.Point(112, 43);
-   this.textBox2.Name = "textBox2";
-   this.textBox2.Size = new System.Drawing.Size(271, 20);
-   this.textBox2.TabIndex = 2;
+   this.lbl_modelo.AutoSize = true;
+   this.lbl_modelo.Location = new System.Drawing.Point(389, 17);
+   this.lbl_modelo.Name = "lbl_modelo";
+   this.lbl_modelo.Size = new System.Drawing.Size(45, 13);
+   this.lbl_modelo.TabIndex = 3;
+   this.lbl_modelo.Text = "Modelo:";
    // 
-   // textBox3
+   // lbl_marca
    // 
-   this.textBox3.Location = new System.Drawing.Point(112, 69);
-   this.textBox3.Name = "textBox3";
-   this.textBox3.Size = new System.Drawing.Size(271, 20);
-   this.textBox3.TabIndex = 3;
+   this.lbl_marca.AutoSize = true;
+   this.lbl_marca.Location = new System.Drawing.Point(6, 72);
+   this.lbl_marca.Name = "lbl_marca";
+   this.lbl_marca.Size = new System.Drawing.Size(40, 13);
+   this.lbl_marca.TabIndex = 2;
+   this.lbl_marca.Text = "Marca:";
    // 
-   // textBox4
+   // lbl_num_serie
    // 
-   this.textBox4.Location = new System.Drawing.Point(479, 69);
-   this.textBox4.Name = "textBox4";
-   this.textBox4.Size = new System.Drawing.Size(291, 20);
-   this.textBox4.TabIndex = 4;
+   this.lbl_num_serie.AutoSize = true;
+   this.lbl_num_serie.Location = new System.Drawing.Point(6, 46);
+   this.lbl_num_serie.Name = "lbl_num_serie";
+   this.lbl_num_serie.Size = new System.Drawing.Size(91, 13);
+   this.lbl_num_serie.TabIndex = 1;
+   this.lbl_num_serie.Text = "Numero De Serie:";
    // 
-   // textBox5
+   // lbl_num_equipo
    // 
-   this.textBox5.Location = new System.Drawing.Point(479, 43);
-   this.textBox5.Name = "textBox5";
-   this.textBox5.Size = new System.Drawing.Size(291, 20);
-   this.textBox5.TabIndex = 5;
+   this.lbl_num_equipo.AutoSize = true;
+   this.lbl_num_equipo.Location = new System.Drawing.Point(6, 20);
+   this.lbl_num_equipo.Name = "lbl_num_equipo";
+   this.lbl_num_equipo.Size = new System.Drawing.Size(100, 13);
+   this.lbl_num_equipo.TabIndex = 0;
+   this.lbl_num_equipo.Text = "Numero De Equipo:";
    // 
-   // textBox6
+   // grd_datos
    // 
-   this.textBox6.Location = new System.Drawing.Point(479, 14);
-   this.textBox6.Name = "textBox6";
-   this.textBox6.Size = new System.Drawing.Size(291, 20);
-   this.textBox6.TabIndex = 6;
-   // 
-   // dataGridView1
-   // 
-   this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-   this.dataGridView1.Location = new System.Drawing.Point(12, 129);
-   this.dataGridView1.Name = "dataGridView1";
-   this.dataGridView1.Size = new System.Drawing.Size(776, 254);
-   this.dataGridView1.TabIndex = 1;
+   this.grd_datos.BackgroundColor = System.Drawing.SystemColors.Control;
+   this.grd_datos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+   this.grd_datos.Location = new System.Drawing.Point(12, 129);
+   this.grd_datos.Name = "grd_datos";
+   this.grd_datos.Size = new System.Drawing.Size(776, 254);
+   this.grd_datos.TabIndex = 1;
    // 
    // btn_asentar_cambios
    // 
@@ -188,7 +189,7 @@
    this.BackColor = System.Drawing.Color.DarkGray;
    this.ClientSize = new System.Drawing.Size(800, 420);
    this.Controls.Add(this.btn_asentar_cambios);
-   this.Controls.Add(this.dataGridView1);
+   this.Controls.Add(this.grd_datos);
    this.Controls.Add(this.gbx_datos_equipo);
    this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
    this.MinimizeBox = false;
@@ -196,7 +197,7 @@
    this.Text = "Modificar Datos De  Equipos";
    this.gbx_datos_equipo.ResumeLayout(false);
    this.gbx_datos_equipo.PerformLayout();
-   ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+   ((System.ComponentModel.ISupportInitialize)(this.grd_datos)).EndInit();
    this.ResumeLayout(false);
 
   }
@@ -210,13 +211,13 @@
   private System.Windows.Forms.Label lbl_marca;
   private System.Windows.Forms.Label lbl_num_serie;
   private System.Windows.Forms.Label lbl_num_equipo;
-  private System.Windows.Forms.TextBox textBox1;
-  private System.Windows.Forms.TextBox textBox2;
-  private System.Windows.Forms.TextBox textBox3;
-  private System.Windows.Forms.TextBox textBox4;
-  private System.Windows.Forms.TextBox textBox5;
-  private System.Windows.Forms.TextBox textBox6;
-  private System.Windows.Forms.DataGridView dataGridView1;
+  private System.Windows.Forms.TextBox txt_numero_equipo;
+  private System.Windows.Forms.TextBox txt_numero_serie;
+  private System.Windows.Forms.TextBox txt_marca;
+  private System.Windows.Forms.TextBox txt_dni;
+  private System.Windows.Forms.TextBox txt_tipo;
+  private System.Windows.Forms.TextBox txt_modelo;
+  private System.Windows.Forms.DataGridView grd_datos;
   private System.Windows.Forms.Button btn_asentar_cambios;
  }
 }

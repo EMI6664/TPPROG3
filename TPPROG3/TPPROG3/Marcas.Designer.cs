@@ -69,6 +69,7 @@
    this.btn_agregar.TabIndex = 3;
    this.btn_agregar.Text = "Agregar Marca";
    this.btn_agregar.UseVisualStyleBackColor = true;
+   this.btn_agregar.Click += new System.EventHandler(this.btn_agregar_Click);
    // 
    // btn_quitar
    // 
@@ -93,6 +94,7 @@
    this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
    this.MaximizeBox = false;
    this.Name = "Marcas";
+   this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
    this.Text = "Marcas";
    ((System.ComponentModel.ISupportInitialize)(this.grd_datos)).EndInit();
    this.ResumeLayout(false);

@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace TPPROG3
 {
- public partial class AgregarEquipo : Form
+ public partial class BuscarPorTipoDeEquipo : Form
  {
-  public AgregarEquipo()
+  public BuscarPorTipoDeEquipo()
   {
    InitializeComponent();
-  }
-
-  private void btn_agregar_Click(object sender, EventArgs e)
-  {
-   MessageBox.Show("Equipo Agregado Satisfactoriamente");
   }
  }
 }

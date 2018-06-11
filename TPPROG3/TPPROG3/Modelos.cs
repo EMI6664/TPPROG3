@@ -16,5 +16,13 @@ namespace TPPROG3
   {
    InitializeComponent();
   }
+
+  private void btn_agregar_Click(object sender, EventArgs e)
+  {
+   if (txt_modelo.Text == "")
+   {
+    MessageBox.Show("Este Campo No Puede Ser Nulo");
+   }
+  }
  }
 }

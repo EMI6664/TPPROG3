@@ -28,21 +28,12 @@
   /// </summary>
   private void InitializeComponent()
   {
-   this.lbl_numero_serie = new System.Windows.Forms.Label();
    this.txt_num_serie = new System.Windows.Forms.TextBox();
    this.grd_datos = new System.Windows.Forms.DataGridView();
    this.btn_buscar = new System.Windows.Forms.Button();
+   this.cmbx_seleccion = new System.Windows.Forms.ComboBox();
    ((System.ComponentModel.ISupportInitialize)(this.grd_datos)).BeginInit();
    this.SuspendLayout();
-   // 
-   // lbl_numero_serie
-   // 
-   this.lbl_numero_serie.AutoSize = true;
-   this.lbl_numero_serie.Location = new System.Drawing.Point(12, 19);
-   this.lbl_numero_serie.Name = "lbl_numero_serie";
-   this.lbl_numero_serie.Size = new System.Drawing.Size(187, 13);
-   this.lbl_numero_serie.TabIndex = 0;
-   this.lbl_numero_serie.Text = "Ingrese El Numero De Serie Deseado:";
    // 
    // txt_num_serie
    // 
@@ -69,16 +60,24 @@
    this.btn_buscar.Text = "Buscar Equipo";
    this.btn_buscar.UseVisualStyleBackColor = true;
    // 
+   // cmbx_seleccion
+   // 
+   this.cmbx_seleccion.FormattingEnabled = true;
+   this.cmbx_seleccion.Location = new System.Drawing.Point(12, 16);
+   this.cmbx_seleccion.Name = "cmbx_seleccion";
+   this.cmbx_seleccion.Size = new System.Drawing.Size(187, 21);
+   this.cmbx_seleccion.TabIndex = 4;
+   // 
    // BuscarPorNumSerie
    // 
    this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
    this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
    this.BackColor = System.Drawing.Color.DarkGray;
    this.ClientSize = new System.Drawing.Size(658, 181);
+   this.Controls.Add(this.cmbx_seleccion);
    this.Controls.Add(this.btn_buscar);
    this.Controls.Add(this.grd_datos);
    this.Controls.Add(this.txt_num_serie);
-   this.Controls.Add(this.lbl_numero_serie);
    this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
    this.MaximizeBox = false;
    this.Name = "BuscarPorNumSerie";
@@ -90,10 +89,9 @@
   }
 
   #endregion
-
-  private System.Windows.Forms.Label lbl_numero_serie;
   private System.Windows.Forms.TextBox txt_num_serie;
   private System.Windows.Forms.DataGridView grd_datos;
   private System.Windows.Forms.Button btn_buscar;
+  private System.Windows.Forms.ComboBox cmbx_seleccion;
  }
 }

@@ -103,6 +103,7 @@
    this.btn_agregar.TabIndex = 12;
    this.btn_agregar.Text = "Agregar Equipo";
    this.btn_agregar.UseVisualStyleBackColor = true;
+   this.btn_agregar.Click += new System.EventHandler(this.btn_agregar_Click);
    // 
    // cmbx_modelo
    // 
