@@ -125,6 +125,8 @@
    this.Controls.Add(this.lbl_color_fuente);
    this.Controls.Add(this.lbl_tamaño_fuente);
    this.Controls.Add(this.lbl_fuente);
+   this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+   this.MaximizeBox = false;
    this.Name = "Configuracion";
    this.Text = "Configuracion";
    this.Load += new System.EventHandler(this.Configuracion_Load);
