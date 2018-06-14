@@ -32,6 +32,12 @@ namespace TPPROG3
    AcercaDe Acerca = new AcercaDe();
    Acerca.Show();
   }
+
+  private void opcionesToolStripMenuItem_Click(object sender, EventArgs e)
+  {
+   Configuracion opciones = new Configuracion();
+   opciones.Show();
+  }
   ///////////////////////////////////
   ///Menu Equipos///////////////////
   private void modificarDatosEquipo_Click(object sender, EventArgs e)
@@ -112,6 +118,7 @@ namespace TPPROG3
    AdministrarUsuarios Usuarios = new AdministrarUsuarios();
    Usuarios.Show();
   }
+
   //////////////////////////
  }
 }

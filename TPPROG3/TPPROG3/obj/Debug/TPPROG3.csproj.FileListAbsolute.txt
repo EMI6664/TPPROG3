@@ -41,3 +41,9 @@ C:\Users\Emilio\Documents\TP Programacion 3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TP
 C:\Users\Emilio\Documents\TP Programacion 3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.BuscarPorModelo.resources
 C:\Users\Emilio\Documents\TP Programacion 3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.BuscarPorTipoDeEquipo.resources
 C:\Users\Emilio\Documents\TP Programacion 3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.AdministrarUsuarios.resources
+C:\Users\Emilio\Documents\TPPROG3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.AdministrarUsuarios.resources
+C:\Users\Emilio\Documents\TPPROG3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.BuscarPorMarca.resources
+C:\Users\Emilio\Documents\TPPROG3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.BuscarPorModelo.resources
+C:\Users\Emilio\Documents\TPPROG3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.BuscarPorTipoDeEquipo.resources
+C:\Users\Emilio\Documents\TPPROG3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.InicioSesion.resources
+C:\Users\Emilio\Documents\TPPROG3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.Configuracion.resources

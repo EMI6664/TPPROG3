@@ -93,6 +93,12 @@
     <Compile Include="BuscarPorTipoDeEquipo.Designer.cs">
       <DependentUpon>BuscarPorTipoDeEquipo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Configuracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configuracion.Designer.cs">
+      <DependentUpon>Configuracion.cs</DependentUpon>
+    </Compile>
     <Compile Include="InicioSesion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,6 +166,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BuscarPorTipoDeEquipo.resx">
       <DependentUpon>BuscarPorTipoDeEquipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configuracion.resx">
+      <DependentUpon>Configuracion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InicioSesion.resx">
       <DependentUpon>InicioSesion.cs</DependentUpon>
