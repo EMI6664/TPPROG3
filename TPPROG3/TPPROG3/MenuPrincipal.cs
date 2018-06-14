@@ -112,6 +112,30 @@ namespace TPPROG3
    AdministrarUsuarios Usuarios = new AdministrarUsuarios();
    Usuarios.Show();
   }
-  //////////////////////////
- }
+        
+       //Repuestos
+ private void agregarRepuestoToolStripMenuItem_Click(object sender, EventArgs e)
+   {
+            Agregar_Repuesto AddRep = new Agregar_Repuesto();
+            AddRep.Show();
+   }
+
+ private void buscarRepuestoToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+            BuscarRepuesto Buscar = new BuscarRepuesto();
+            Buscar.Show();
+    }
+
+        private void verListadoToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            ListadoRepuesto ListRep = new ListadoRepuesto();
+            ListRep.Show();
+        }
+
+        private void modificarRepuestosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ModificarRepuesto MR = new ModificarRepuesto();
+            MR.Show();
+        }
+    }
 }
