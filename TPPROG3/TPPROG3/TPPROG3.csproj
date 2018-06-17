@@ -81,6 +81,12 @@
     <Compile Include="BuscarPorNumEquipo.Designer.cs">
       <DependentUpon>BuscarPorNumEquipo.cs</DependentUpon>
     </Compile>
+    <Compile Include="BuscarPorNumeroService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarPorNumeroService.Designer.cs">
+      <DependentUpon>BuscarPorNumeroService.cs</DependentUpon>
+    </Compile>
     <Compile Include="BuscarPorNumSerie.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,11 +99,29 @@
     <Compile Include="BuscarPorTipoDeEquipo.Designer.cs">
       <DependentUpon>BuscarPorTipoDeEquipo.cs</DependentUpon>
     </Compile>
+    <Compile Include="BuscarServicePorCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarServicePorCliente.Designer.cs">
+      <DependentUpon>BuscarServicePorCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuscarServicePorFecha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BuscarServicePorFecha.Designer.cs">
+      <DependentUpon>BuscarServicePorFecha.cs</DependentUpon>
+    </Compile>
     <Compile Include="Configuracion.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Configuracion.Designer.cs">
       <DependentUpon>Configuracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IngresarService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IngresarService.Designer.cs">
+      <DependentUpon>IngresarService.cs</DependentUpon>
     </Compile>
     <Compile Include="InicioSesion.cs">
       <SubType>Form</SubType>
@@ -110,6 +134,12 @@
     </Compile>
     <Compile Include="ListadoEquipos.Designer.cs">
       <DependentUpon>ListadoEquipos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListadoService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListadoService.Designer.cs">
+      <DependentUpon>ListadoService.cs</DependentUpon>
     </Compile>
     <Compile Include="Marcas.cs">
       <SubType>Form</SubType>
@@ -144,6 +174,12 @@
     <Compile Include="TiposDeEquipo.Designer.cs">
       <DependentUpon>TiposDeEquipo.cs</DependentUpon>
     </Compile>
+    <Compile Include="TiposDeService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TiposDeService.Designer.cs">
+      <DependentUpon>TiposDeService.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AcercaDe.resx">
       <DependentUpon>AcercaDe.cs</DependentUpon>
     </EmbeddedResource>
@@ -162,20 +198,35 @@
     <EmbeddedResource Include="BuscarPorNumEquipo.resx">
       <DependentUpon>BuscarPorNumEquipo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BuscarPorNumeroService.resx">
+      <DependentUpon>BuscarPorNumeroService.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BuscarPorNumSerie.resx">
       <DependentUpon>BuscarPorNumSerie.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BuscarPorTipoDeEquipo.resx">
       <DependentUpon>BuscarPorTipoDeEquipo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BuscarServicePorCliente.resx">
+      <DependentUpon>BuscarServicePorCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BuscarServicePorFecha.resx">
+      <DependentUpon>BuscarServicePorFecha.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Configuracion.resx">
       <DependentUpon>Configuracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IngresarService.resx">
+      <DependentUpon>IngresarService.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InicioSesion.resx">
       <DependentUpon>InicioSesion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListadoEquipos.resx">
       <DependentUpon>ListadoEquipos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListadoService.resx">
+      <DependentUpon>ListadoService.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Marcas.resx">
       <DependentUpon>Marcas.cs</DependentUpon>
@@ -200,6 +251,9 @@
     </Compile>
     <EmbeddedResource Include="TiposDeEquipo.resx">
       <DependentUpon>TiposDeEquipo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TiposDeService.resx">
+      <DependentUpon>TiposDeService.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

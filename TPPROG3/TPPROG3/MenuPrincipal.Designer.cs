@@ -66,12 +66,17 @@
    this.porClienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
    this.porFechaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
    this.verListadoToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+   this.agregarQuitarTipoDeServiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
    this.configuracionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
    this.opcionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
    this.administrarUsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
    this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
    this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
    this.manualDeUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+   this.detallesDeServiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+   this.generarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+   this.verListadoDeDetallesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+   this.generarSalidaDeServiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
    this.mnstp_principal.SuspendLayout();
    this.SuspendLayout();
    // 
@@ -315,7 +320,10 @@
    this.serviceToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ingresarServiceToolStripMenuItem,
             this.buscarServiceToolStripMenuItem,
-            this.verListadoToolStripMenuItem3});
+            this.verListadoToolStripMenuItem3,
+            this.agregarQuitarTipoDeServiceToolStripMenuItem,
+            this.detallesDeServiceToolStripMenuItem,
+            this.generarSalidaDeServiceToolStripMenuItem});
    this.serviceToolStripMenuItem.Name = "serviceToolStripMenuItem";
    this.serviceToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
    this.serviceToolStripMenuItem.Text = "Service";
@@ -323,8 +331,9 @@
    // ingresarServiceToolStripMenuItem
    // 
    this.ingresarServiceToolStripMenuItem.Name = "ingresarServiceToolStripMenuItem";
-   this.ingresarServiceToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+   this.ingresarServiceToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
    this.ingresarServiceToolStripMenuItem.Text = "Ingresar Service";
+   this.ingresarServiceToolStripMenuItem.Click += new System.EventHandler(this.ingresarServiceToolStripMenuItem_Click);
    // 
    // buscarServiceToolStripMenuItem
    // 
@@ -333,7 +342,7 @@
             this.porClienteToolStripMenuItem,
             this.porFechaToolStripMenuItem});
    this.buscarServiceToolStripMenuItem.Name = "buscarServiceToolStripMenuItem";
-   this.buscarServiceToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+   this.buscarServiceToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
    this.buscarServiceToolStripMenuItem.Text = "Buscar Service";
    // 
    // porNDeServiceToolStripMenuItem
@@ -341,24 +350,35 @@
    this.porNDeServiceToolStripMenuItem.Name = "porNDeServiceToolStripMenuItem";
    this.porNDeServiceToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
    this.porNDeServiceToolStripMenuItem.Text = "Por N° De Service";
+   this.porNDeServiceToolStripMenuItem.Click += new System.EventHandler(this.porNDeServiceToolStripMenuItem_Click);
    // 
    // porClienteToolStripMenuItem
    // 
    this.porClienteToolStripMenuItem.Name = "porClienteToolStripMenuItem";
    this.porClienteToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
    this.porClienteToolStripMenuItem.Text = "Por Cliente";
+   this.porClienteToolStripMenuItem.Click += new System.EventHandler(this.porClienteToolStripMenuItem_Click);
    // 
    // porFechaToolStripMenuItem
    // 
    this.porFechaToolStripMenuItem.Name = "porFechaToolStripMenuItem";
    this.porFechaToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
    this.porFechaToolStripMenuItem.Text = "Por Fecha";
+   this.porFechaToolStripMenuItem.Click += new System.EventHandler(this.porFechaToolStripMenuItem_Click);
    // 
    // verListadoToolStripMenuItem3
    // 
    this.verListadoToolStripMenuItem3.Name = "verListadoToolStripMenuItem3";
-   this.verListadoToolStripMenuItem3.Size = new System.Drawing.Size(156, 22);
+   this.verListadoToolStripMenuItem3.Size = new System.Drawing.Size(238, 22);
    this.verListadoToolStripMenuItem3.Text = "Ver Listado";
+   this.verListadoToolStripMenuItem3.Click += new System.EventHandler(this.verListadoToolStripMenuItem3_Click);
+   // 
+   // agregarQuitarTipoDeServiceToolStripMenuItem
+   // 
+   this.agregarQuitarTipoDeServiceToolStripMenuItem.Name = "agregarQuitarTipoDeServiceToolStripMenuItem";
+   this.agregarQuitarTipoDeServiceToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
+   this.agregarQuitarTipoDeServiceToolStripMenuItem.Text = "Agregar/Quitar Tipo De Service";
+   this.agregarQuitarTipoDeServiceToolStripMenuItem.Click += new System.EventHandler(this.agregarQuitarTipoDeServiceToolStripMenuItem_Click);
    // 
    // configuracionToolStripMenuItem
    // 
@@ -404,6 +424,33 @@
    this.manualDeUsuarioToolStripMenuItem.Name = "manualDeUsuarioToolStripMenuItem";
    this.manualDeUsuarioToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
    this.manualDeUsuarioToolStripMenuItem.Text = "Manual De Usuario";
+   // 
+   // detallesDeServiceToolStripMenuItem
+   // 
+   this.detallesDeServiceToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.generarToolStripMenuItem,
+            this.verListadoDeDetallesToolStripMenuItem});
+   this.detallesDeServiceToolStripMenuItem.Name = "detallesDeServiceToolStripMenuItem";
+   this.detallesDeServiceToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
+   this.detallesDeServiceToolStripMenuItem.Text = "Detalles De Service";
+   // 
+   // generarToolStripMenuItem
+   // 
+   this.generarToolStripMenuItem.Name = "generarToolStripMenuItem";
+   this.generarToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+   this.generarToolStripMenuItem.Text = "Agregar/Quitar Detalles";
+   // 
+   // verListadoDeDetallesToolStripMenuItem
+   // 
+   this.verListadoDeDetallesToolStripMenuItem.Name = "verListadoDeDetallesToolStripMenuItem";
+   this.verListadoDeDetallesToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+   this.verListadoDeDetallesToolStripMenuItem.Text = "Ver Listado De Detalles";
+   // 
+   // generarSalidaDeServiceToolStripMenuItem
+   // 
+   this.generarSalidaDeServiceToolStripMenuItem.Name = "generarSalidaDeServiceToolStripMenuItem";
+   this.generarSalidaDeServiceToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
+   this.generarSalidaDeServiceToolStripMenuItem.Text = "Generar Salida De Service";
    // 
    // menu_principal
    // 
@@ -470,6 +517,11 @@
   private System.Windows.Forms.ToolStripMenuItem porMarcaToolStripMenuItem;
   private System.Windows.Forms.ToolStripMenuItem porModeloToolStripMenuItem;
   private System.Windows.Forms.ToolStripMenuItem porTipoToolStripMenuItem;
+  private System.Windows.Forms.ToolStripMenuItem agregarQuitarTipoDeServiceToolStripMenuItem;
+  private System.Windows.Forms.ToolStripMenuItem detallesDeServiceToolStripMenuItem;
+  private System.Windows.Forms.ToolStripMenuItem generarToolStripMenuItem;
+  private System.Windows.Forms.ToolStripMenuItem verListadoDeDetallesToolStripMenuItem;
+  private System.Windows.Forms.ToolStripMenuItem generarSalidaDeServiceToolStripMenuItem;
  }
 }
 

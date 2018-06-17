@@ -119,6 +119,46 @@ namespace TPPROG3
    Usuarios.Show();
   }
 
+  ///////////////////////////////////
+
+  //////////////Service//////////////////////////////////////////
+
+  private void ingresarServiceToolStripMenuItem_Click(object sender, EventArgs e)
+  {
+   IngresarService service1 = new IngresarService();
+   service1.Show();
+  }
+
+  private void porNDeServiceToolStripMenuItem_Click(object sender, EventArgs e)
+  {
+   BuscarPorNumeroService BusquedaService = new BuscarPorNumeroService();
+   BusquedaService.Show();
+  }
+
+  private void porClienteToolStripMenuItem_Click(object sender, EventArgs e)
+  {
+   BuscarServicePorCliente BusquedaService2 = new BuscarServicePorCliente();
+   BusquedaService2.Show();
+  }
+
+  private void porFechaToolStripMenuItem_Click(object sender, EventArgs e)
+  {
+   BuscarServicePorFecha BusquedaService3 = new BuscarServicePorFecha();
+   BusquedaService3.Show();
+  }
+
+  private void verListadoToolStripMenuItem3_Click(object sender, EventArgs e)
+  {
+  ListadoService ListaService = new ListadoService();
+   ListaService.Show();
+  }
+
+  private void agregarQuitarTipoDeServiceToolStripMenuItem_Click(object sender, EventArgs e)
+  {
+   TiposDeService TipoService = new TiposDeService();
+   TipoService.Show();
+  }
+  ////////////////////////////////////////////////////////////////
   //////////////////////////
  }
 }

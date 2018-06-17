@@ -11,9 +11,8 @@ namespace TPPROG3
 {
  class Tablas
  {
-  public string CargarCombobox(string consulta, int NColumna, ComboBox lista)
+  public void CargarCombobox(string consulta, int NColumna, ComboBox lista)
   {
-   string Cadena = "";
    SqlConnection cnNeptuno = new SqlConnection("Data Source=localhost\\sqlexpress;Initial Catalog=Neptuno;Integrated Security=True");
    SqlCommand comando = new SqlCommand(consulta, cnNeptuno);
    cnNeptuno.Open();
@@ -23,7 +22,6 @@ namespace TPPROG3
     lista.Items.Add(Reader[NColumna].ToString());
    }
    cnNeptuno.Close();
-   return Cadena;
   }
 
   public DataTable TraerTabla(string comando, string Nombre)
@@ -36,7 +34,5 @@ namespace TPPROG3
    CNProductos.Close();
    return Tabla;
   }
-
-
  }
 }

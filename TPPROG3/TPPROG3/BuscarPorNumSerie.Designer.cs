@@ -62,6 +62,10 @@
    // 
    // cmbx_seleccion
    // 
+   this.cmbx_seleccion.AutoCompleteCustomSource.AddRange(new string[] {
+            "Comienza Con",
+            "Termina Con ",
+            "Es Igual A"});
    this.cmbx_seleccion.FormattingEnabled = true;
    this.cmbx_seleccion.Location = new System.Drawing.Point(12, 16);
    this.cmbx_seleccion.Name = "cmbx_seleccion";

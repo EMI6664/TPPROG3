@@ -36,6 +36,7 @@
    this.cmbx_color_fuente = new System.Windows.Forms.ComboBox();
    this.cmbx_color_fondo = new System.Windows.Forms.ComboBox();
    this.num_tamaño = new System.Windows.Forms.NumericUpDown();
+   this.btn_confirmar_cambios = new System.Windows.Forms.Button();
    ((System.ComponentModel.ISupportInitialize)(this.num_tamaño)).BeginInit();
    this.SuspendLayout();
    // 
@@ -111,12 +112,22 @@
    this.num_tamaño.TabIndex = 8;
    this.num_tamaño.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
    // 
+   // btn_confirmar_cambios
+   // 
+   this.btn_confirmar_cambios.Location = new System.Drawing.Point(284, 249);
+   this.btn_confirmar_cambios.Name = "btn_confirmar_cambios";
+   this.btn_confirmar_cambios.Size = new System.Drawing.Size(130, 23);
+   this.btn_confirmar_cambios.TabIndex = 9;
+   this.btn_confirmar_cambios.Text = "Confirmar Cambios";
+   this.btn_confirmar_cambios.UseVisualStyleBackColor = true;
+   // 
    // Configuracion
    // 
    this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
    this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
    this.BackColor = System.Drawing.Color.DarkGray;
-   this.ClientSize = new System.Drawing.Size(402, 238);
+   this.ClientSize = new System.Drawing.Size(426, 284);
+   this.Controls.Add(this.btn_confirmar_cambios);
    this.Controls.Add(this.num_tamaño);
    this.Controls.Add(this.cmbx_color_fondo);
    this.Controls.Add(this.cmbx_color_fuente);
@@ -128,6 +139,7 @@
    this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
    this.MaximizeBox = false;
    this.Name = "Configuracion";
+   this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
    this.Text = "Configuracion";
    this.Load += new System.EventHandler(this.Configuracion_Load);
    ((System.ComponentModel.ISupportInitialize)(this.num_tamaño)).EndInit();
@@ -146,5 +158,6 @@
   private System.Windows.Forms.ComboBox cmbx_color_fuente;
   private System.Windows.Forms.ComboBox cmbx_color_fondo;
   private System.Windows.Forms.NumericUpDown num_tamaño;
+  private System.Windows.Forms.Button btn_confirmar_cambios;
  }
 }
