@@ -53,3 +53,10 @@ C:\Users\Emilio\Documents\TPPROG3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.Busc
 C:\Users\Emilio\Documents\TPPROG3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.IngresarService.resources
 C:\Users\Emilio\Documents\TPPROG3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.ListadoService.resources
 C:\Users\Emilio\Documents\TPPROG3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.TiposDeService.resources
+C:\Users\Emilio\Documents\TP Programacion 3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.BuscarPorNumeroService.resources
+C:\Users\Emilio\Documents\TP Programacion 3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.BuscarServicePorCliente.resources
+C:\Users\Emilio\Documents\TP Programacion 3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.BuscarServicePorFecha.resources
+C:\Users\Emilio\Documents\TP Programacion 3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.Configuracion.resources
+C:\Users\Emilio\Documents\TP Programacion 3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.IngresarService.resources
+C:\Users\Emilio\Documents\TP Programacion 3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.ListadoService.resources
+C:\Users\Emilio\Documents\TP Programacion 3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.TiposDeService.resources

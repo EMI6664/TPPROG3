@@ -114,7 +114,7 @@
    // 
    // btn_confirmar_cambios
    // 
-   this.btn_confirmar_cambios.Location = new System.Drawing.Point(284, 249);
+   this.btn_confirmar_cambios.Location = new System.Drawing.Point(15, 240);
    this.btn_confirmar_cambios.Name = "btn_confirmar_cambios";
    this.btn_confirmar_cambios.Size = new System.Drawing.Size(130, 23);
    this.btn_confirmar_cambios.TabIndex = 9;
