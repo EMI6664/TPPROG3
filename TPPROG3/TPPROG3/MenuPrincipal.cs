@@ -158,6 +158,12 @@ namespace TPPROG3
    TiposDeService TipoService = new TiposDeService();
    TipoService.Show();
   }
+
+  private void generarSalidaDeServiceToolStripMenuItem_Click(object sender, EventArgs e)
+  {
+   GenerarSalidaService GenerarSalida = new GenerarSalidaService();
+   GenerarSalida.Show();
+  }
   ////////////////////////////////////////////////////////////////
   //////////////////////////
  }

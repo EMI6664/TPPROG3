@@ -67,16 +67,16 @@
    this.porFechaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
    this.verListadoToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
    this.agregarQuitarTipoDeServiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+   this.detallesDeServiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+   this.generarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+   this.verListadoDeDetallesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+   this.generarSalidaDeServiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
    this.configuracionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
    this.opcionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
    this.administrarUsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
    this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
    this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
    this.manualDeUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-   this.detallesDeServiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-   this.generarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-   this.verListadoDeDetallesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-   this.generarSalidaDeServiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
    this.mnstp_principal.SuspendLayout();
    this.SuspendLayout();
    // 
@@ -380,6 +380,34 @@
    this.agregarQuitarTipoDeServiceToolStripMenuItem.Text = "Agregar/Quitar Tipo De Service";
    this.agregarQuitarTipoDeServiceToolStripMenuItem.Click += new System.EventHandler(this.agregarQuitarTipoDeServiceToolStripMenuItem_Click);
    // 
+   // detallesDeServiceToolStripMenuItem
+   // 
+   this.detallesDeServiceToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.generarToolStripMenuItem,
+            this.verListadoDeDetallesToolStripMenuItem});
+   this.detallesDeServiceToolStripMenuItem.Name = "detallesDeServiceToolStripMenuItem";
+   this.detallesDeServiceToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
+   this.detallesDeServiceToolStripMenuItem.Text = "Detalles De Service";
+   // 
+   // generarToolStripMenuItem
+   // 
+   this.generarToolStripMenuItem.Name = "generarToolStripMenuItem";
+   this.generarToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+   this.generarToolStripMenuItem.Text = "Agregar/Quitar Detalles";
+   // 
+   // verListadoDeDetallesToolStripMenuItem
+   // 
+   this.verListadoDeDetallesToolStripMenuItem.Name = "verListadoDeDetallesToolStripMenuItem";
+   this.verListadoDeDetallesToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+   this.verListadoDeDetallesToolStripMenuItem.Text = "Ver Listado De Detalles";
+   // 
+   // generarSalidaDeServiceToolStripMenuItem
+   // 
+   this.generarSalidaDeServiceToolStripMenuItem.Name = "generarSalidaDeServiceToolStripMenuItem";
+   this.generarSalidaDeServiceToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
+   this.generarSalidaDeServiceToolStripMenuItem.Text = "Generar Salida De Service";
+   this.generarSalidaDeServiceToolStripMenuItem.Click += new System.EventHandler(this.generarSalidaDeServiceToolStripMenuItem_Click);
+   // 
    // configuracionToolStripMenuItem
    // 
    this.configuracionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -424,33 +452,6 @@
    this.manualDeUsuarioToolStripMenuItem.Name = "manualDeUsuarioToolStripMenuItem";
    this.manualDeUsuarioToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
    this.manualDeUsuarioToolStripMenuItem.Text = "Manual De Usuario";
-   // 
-   // detallesDeServiceToolStripMenuItem
-   // 
-   this.detallesDeServiceToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.generarToolStripMenuItem,
-            this.verListadoDeDetallesToolStripMenuItem});
-   this.detallesDeServiceToolStripMenuItem.Name = "detallesDeServiceToolStripMenuItem";
-   this.detallesDeServiceToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
-   this.detallesDeServiceToolStripMenuItem.Text = "Detalles De Service";
-   // 
-   // generarToolStripMenuItem
-   // 
-   this.generarToolStripMenuItem.Name = "generarToolStripMenuItem";
-   this.generarToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
-   this.generarToolStripMenuItem.Text = "Agregar/Quitar Detalles";
-   // 
-   // verListadoDeDetallesToolStripMenuItem
-   // 
-   this.verListadoDeDetallesToolStripMenuItem.Name = "verListadoDeDetallesToolStripMenuItem";
-   this.verListadoDeDetallesToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
-   this.verListadoDeDetallesToolStripMenuItem.Text = "Ver Listado De Detalles";
-   // 
-   // generarSalidaDeServiceToolStripMenuItem
-   // 
-   this.generarSalidaDeServiceToolStripMenuItem.Name = "generarSalidaDeServiceToolStripMenuItem";
-   this.generarSalidaDeServiceToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
-   this.generarSalidaDeServiceToolStripMenuItem.Text = "Generar Salida De Service";
    // 
    // menu_principal
    // 

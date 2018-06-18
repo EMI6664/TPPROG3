@@ -117,6 +117,12 @@
     <Compile Include="Configuracion.Designer.cs">
       <DependentUpon>Configuracion.cs</DependentUpon>
     </Compile>
+    <Compile Include="GenerarSalidaService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerarSalidaService.Designer.cs">
+      <DependentUpon>GenerarSalidaService.cs</DependentUpon>
+    </Compile>
     <Compile Include="IngresarService.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -215,6 +221,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Configuracion.resx">
       <DependentUpon>Configuracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerarSalidaService.resx">
+      <DependentUpon>GenerarSalidaService.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IngresarService.resx">
       <DependentUpon>IngresarService.cs</DependentUpon>

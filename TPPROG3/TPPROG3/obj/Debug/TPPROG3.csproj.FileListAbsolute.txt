@@ -60,3 +60,35 @@ C:\Users\Emilio\Documents\TP Programacion 3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TP
 C:\Users\Emilio\Documents\TP Programacion 3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.IngresarService.resources
 C:\Users\Emilio\Documents\TP Programacion 3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.ListadoService.resources
 C:\Users\Emilio\Documents\TP Programacion 3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.TiposDeService.resources
+C:\Users\Emilio\Documents\Repositorio Prog3\TPPROG3\TPPROG3\TPPROG3\bin\Debug\TPPROG3.exe.config
+C:\Users\Emilio\Documents\Repositorio Prog3\TPPROG3\TPPROG3\TPPROG3\bin\Debug\TPPROG3.exe
+C:\Users\Emilio\Documents\Repositorio Prog3\TPPROG3\TPPROG3\TPPROG3\bin\Debug\TPPROG3.pdb
+C:\Users\Emilio\Documents\Repositorio Prog3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.csprojAssemblyReference.cache
+C:\Users\Emilio\Documents\Repositorio Prog3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.AcercaDe.resources
+C:\Users\Emilio\Documents\Repositorio Prog3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.AdministrarUsuarios.resources
+C:\Users\Emilio\Documents\Repositorio Prog3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.AgregarEquipo.resources
+C:\Users\Emilio\Documents\Repositorio Prog3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.BuscarPorMarca.resources
+C:\Users\Emilio\Documents\Repositorio Prog3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.BuscarPorModelo.resources
+C:\Users\Emilio\Documents\Repositorio Prog3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.BuscarPorNumEquipo.resources
+C:\Users\Emilio\Documents\Repositorio Prog3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.BuscarPorNumeroService.resources
+C:\Users\Emilio\Documents\Repositorio Prog3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.BuscarPorNumSerie.resources
+C:\Users\Emilio\Documents\Repositorio Prog3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.BuscarPorTipoDeEquipo.resources
+C:\Users\Emilio\Documents\Repositorio Prog3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.BuscarServicePorCliente.resources
+C:\Users\Emilio\Documents\Repositorio Prog3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.BuscarServicePorFecha.resources
+C:\Users\Emilio\Documents\Repositorio Prog3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.Configuracion.resources
+C:\Users\Emilio\Documents\Repositorio Prog3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.GenerarSalidaService.resources
+C:\Users\Emilio\Documents\Repositorio Prog3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.IngresarService.resources
+C:\Users\Emilio\Documents\Repositorio Prog3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.InicioSesion.resources
+C:\Users\Emilio\Documents\Repositorio Prog3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.ListadoEquipos.resources
+C:\Users\Emilio\Documents\Repositorio Prog3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.ListadoService.resources
+C:\Users\Emilio\Documents\Repositorio Prog3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.Marcas.resources
+C:\Users\Emilio\Documents\Repositorio Prog3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.menu_principal.resources
+C:\Users\Emilio\Documents\Repositorio Prog3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.Modelos.resources
+C:\Users\Emilio\Documents\Repositorio Prog3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.ModificarDatosEquipo.resources
+C:\Users\Emilio\Documents\Repositorio Prog3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.Properties.Resources.resources
+C:\Users\Emilio\Documents\Repositorio Prog3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.TiposDeEquipo.resources
+C:\Users\Emilio\Documents\Repositorio Prog3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.TiposDeService.resources
+C:\Users\Emilio\Documents\Repositorio Prog3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.csproj.GenerateResource.cache
+C:\Users\Emilio\Documents\Repositorio Prog3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.csproj.CoreCompileInputs.cache
+C:\Users\Emilio\Documents\Repositorio Prog3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.exe
+C:\Users\Emilio\Documents\Repositorio Prog3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.pdb
