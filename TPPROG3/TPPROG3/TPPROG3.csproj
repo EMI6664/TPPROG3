@@ -117,6 +117,12 @@
     <Compile Include="Configuracion.Designer.cs">
       <DependentUpon>Configuracion.cs</DependentUpon>
     </Compile>
+    <Compile Include="DetalleService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetalleService.Designer.cs">
+      <DependentUpon>DetalleService.cs</DependentUpon>
+    </Compile>
     <Compile Include="GenerarSalidaService.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +140,12 @@
     </Compile>
     <Compile Include="InicioSesion.Designer.cs">
       <DependentUpon>InicioSesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListadoDetalleService.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListadoDetalleService.Designer.cs">
+      <DependentUpon>ListadoDetalleService.cs</DependentUpon>
     </Compile>
     <Compile Include="ListadoEquipos.cs">
       <SubType>Form</SubType>
@@ -222,6 +234,9 @@
     <EmbeddedResource Include="Configuracion.resx">
       <DependentUpon>Configuracion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DetalleService.resx">
+      <DependentUpon>DetalleService.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GenerarSalidaService.resx">
       <DependentUpon>GenerarSalidaService.cs</DependentUpon>
     </EmbeddedResource>
@@ -230,6 +245,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="InicioSesion.resx">
       <DependentUpon>InicioSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListadoDetalleService.resx">
+      <DependentUpon>ListadoDetalleService.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListadoEquipos.resx">
       <DependentUpon>ListadoEquipos.cs</DependentUpon>
