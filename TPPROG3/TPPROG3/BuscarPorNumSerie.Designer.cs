@@ -59,14 +59,21 @@
    this.btn_buscar.TabIndex = 3;
    this.btn_buscar.Text = "Buscar Equipo";
    this.btn_buscar.UseVisualStyleBackColor = true;
+   this.btn_buscar.Click += new System.EventHandler(this.btn_buscar_Click);
    // 
    // cmbx_seleccion
    // 
+   this.cmbx_seleccion.AllowDrop = true;
    this.cmbx_seleccion.AutoCompleteCustomSource.AddRange(new string[] {
             "Comienza Con",
             "Termina Con ",
             "Es Igual A"});
+   this.cmbx_seleccion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
    this.cmbx_seleccion.FormattingEnabled = true;
+   this.cmbx_seleccion.Items.AddRange(new object[] {
+            "Comienza Con",
+            "Termina Con ",
+            "Es Igual A"});
    this.cmbx_seleccion.Location = new System.Drawing.Point(12, 16);
    this.cmbx_seleccion.Name = "cmbx_seleccion";
    this.cmbx_seleccion.Size = new System.Drawing.Size(187, 21);

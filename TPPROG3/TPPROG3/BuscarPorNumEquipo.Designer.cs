@@ -59,6 +59,7 @@
    this.btn_buscar.TabIndex = 2;
    this.btn_buscar.Text = "Buscar Equipo";
    this.btn_buscar.UseVisualStyleBackColor = true;
+   this.btn_buscar.Click += new System.EventHandler(this.btn_buscar_Click);
    // 
    // grd_datos
    // 

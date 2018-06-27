@@ -117,6 +117,7 @@
     <Compile Include="Configuracion.Designer.cs">
       <DependentUpon>Configuracion.cs</DependentUpon>
     </Compile>
+    <Compile Include="Consultas.cs" />
     <Compile Include="DetalleService.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -54,6 +54,7 @@
    // 
    // cmbx_modelo
    // 
+   this.cmbx_modelo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
    this.cmbx_modelo.FormattingEnabled = true;
    this.cmbx_modelo.Location = new System.Drawing.Point(12, 9);
    this.cmbx_modelo.Name = "cmbx_modelo";
