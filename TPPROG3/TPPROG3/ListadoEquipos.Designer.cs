@@ -60,6 +60,7 @@
    this.rbtn_dni.TabIndex = 2;
    this.rbtn_dni.Text = "DNI Del Dueño";
    this.rbtn_dni.UseVisualStyleBackColor = true;
+   this.rbtn_dni.CheckedChanged += new System.EventHandler(this.rbtn_dni_CheckedChanged);
    // 
    // rbtn_nequipo
    // 
@@ -70,6 +71,7 @@
    this.rbtn_nequipo.TabIndex = 1;
    this.rbtn_nequipo.Text = "Numero De Equipo";
    this.rbtn_nequipo.UseVisualStyleBackColor = true;
+   this.rbtn_nequipo.CheckedChanged += new System.EventHandler(this.rbtn_nequipo_CheckedChanged);
    // 
    // rbtn_nserie
    // 
@@ -82,6 +84,7 @@
    this.rbtn_nserie.TabStop = true;
    this.rbtn_nserie.Text = "Numero De Serie";
    this.rbtn_nserie.UseVisualStyleBackColor = true;
+   this.rbtn_nserie.CheckedChanged += new System.EventHandler(this.rbtn_nserie_CheckedChanged);
    // 
    // grd_datos
    // 

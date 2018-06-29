@@ -11,7 +11,8 @@ namespace TPPROG3
 {
  class Tablas
  {
-  public void CargarCombobox(string consulta, int NColumna, ComboBox lista)
+ ////General///////////////////////////////////////////
+  public void CargarCombobox(string consulta, int NColumna, ComboBox lista)//////permite cargar un combobox al pasarle su direccion por parametro/////
   {
    SqlConnection cnDB = new SqlConnection("Data Source=localhost\\sqlexpress;Initial Catalog=KeplerDB;Integrated Security=True");
    SqlCommand comando = new SqlCommand(consulta, cnDB);
@@ -23,7 +24,7 @@ namespace TPPROG3
    }
    cnDB.Close();
   }
-  public void Cargarlistbox(string consulta, int NColumna, ListBox lista)
+  public void Cargarlistbox(string consulta, int NColumna, ListBox lista)/////permite cargar un Listbox al pasarle su direccion por parametro/////
   {
    SqlConnection cnDB = new SqlConnection("Data Source=localhost\\sqlexpress;Initial Catalog=KeplerDB;Integrated Security=True");
    SqlCommand comando = new SqlCommand(consulta, cnDB);
@@ -36,7 +37,7 @@ namespace TPPROG3
    cnDB.Close();
   }
 
-  public DataTable TraerTabla(string comando, string Nombre)
+  public DataTable TraerTabla(string comando, string Nombre)///permite cargar un datatable al pasar por parametro el SQl Command y el nombre de la tabla///
   {
    DataSet Items = new DataSet();
    SqlConnection cnDB = new SqlConnection("Data Source=localhost\\sqlexpress;Initial Catalog=KeplerDB;Integrated Security=True");
@@ -46,5 +47,6 @@ namespace TPPROG3
    cnDB.Close();
    return Tabla;
   }
+  /////////////////////////////////////////////////////////
  }
 }

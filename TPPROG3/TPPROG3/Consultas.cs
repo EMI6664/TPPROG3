@@ -11,7 +11,7 @@ namespace TPPROG3
  ////////Consultas Equipos////////////
 
  public string CrearConsultaEquipo(int OpcionBusqueda,int OpcionFiltro,string Busqueda){
-   string consulta = "select * from Equipos";
+   string consulta = "select Nserie as 'Numero De Serie',Nequipo as 'Numero De Equipo',Marca,Modelo,Tipo,DNIdueño as 'DNI Del Dueño' from Equipos";
 
    switch (OpcionBusqueda){
 

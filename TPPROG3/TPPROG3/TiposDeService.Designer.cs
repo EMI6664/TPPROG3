@@ -63,6 +63,7 @@
    // 
    // grd_datos
    // 
+   this.grd_datos.BackgroundColor = System.Drawing.SystemColors.Control;
    this.grd_datos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
    this.grd_datos.Location = new System.Drawing.Point(8, 76);
    this.grd_datos.Name = "grd_datos";
@@ -82,6 +83,7 @@
    // 
    this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
    this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+   this.BackColor = System.Drawing.Color.DarkGray;
    this.ClientSize = new System.Drawing.Size(336, 413);
    this.Controls.Add(this.btn_quitar);
    this.Controls.Add(this.grd_datos);

@@ -23,13 +23,13 @@ namespace TPPROG3
     MessageBox.Show("Ingrese un valor por favor");
     return;
    }
-   for (int i=0;i<txt_num_equipo.Text.Length;i++){
-    if (char.IsDigit(txt_num_equipo.Text,i)==false){
-     MessageBox.Show("Se Acepta Solamente Numeros");
-     return;
-    }
-   }
 
+   Validaciones VL1 = new Validaciones();
+ if(VL1.VerficarCampoNumerico(txt_num_equipo.Text)==false){
+    MessageBox.Show("Se Acepta Solamente Numeros");
+    return;
+   }
+  
    Consultas BusquedaEquipo = new Consultas();
    string comando = BusquedaEquipo.CrearConsultaEquipo(1, 0, txt_num_equipo.Text);
    Tablas DATA = new Tablas();

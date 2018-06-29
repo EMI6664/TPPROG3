@@ -199,6 +199,7 @@
     <Compile Include="TiposDeService.Designer.cs">
       <DependentUpon>TiposDeService.cs</DependentUpon>
     </Compile>
+    <Compile Include="Validaciones.cs" />
     <EmbeddedResource Include="AcercaDe.resx">
       <DependentUpon>AcercaDe.cs</DependentUpon>
     </EmbeddedResource>

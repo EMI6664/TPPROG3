@@ -16,5 +16,18 @@ namespace TPPROG3
   {
    InitializeComponent();
   }
+
+  private void btn_buscar_Click(object sender, EventArgs e)
+  {
+   if (cmbx_marca.SelectedIndex<0)
+   {
+    MessageBox.Show("Seleccione Una Marca");
+    return;
+   }
+   Consultas BusquedaEquipo = new Consultas();
+   string comando = BusquedaEquipo.CrearConsultaEquipo(3, 9, cmbx_marca.SelectedItem.ToString());
+   Tablas DATA = new Tablas();
+   grd_datos.DataSource = DATA.TraerTabla(comando, "EquiposBuscados");
+  }
  }
 }

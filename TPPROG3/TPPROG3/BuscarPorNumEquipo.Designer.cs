@@ -67,7 +67,7 @@
    this.grd_datos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
    this.grd_datos.Location = new System.Drawing.Point(15, 57);
    this.grd_datos.Name = "grd_datos";
-   this.grd_datos.Size = new System.Drawing.Size(592, 117);
+   this.grd_datos.Size = new System.Drawing.Size(856, 117);
    this.grd_datos.TabIndex = 3;
    // 
    // BuscarPorNumEquipo
@@ -75,7 +75,7 @@
    this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
    this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
    this.BackColor = System.Drawing.Color.DarkGray;
-   this.ClientSize = new System.Drawing.Size(619, 209);
+   this.ClientSize = new System.Drawing.Size(883, 209);
    this.Controls.Add(this.grd_datos);
    this.Controls.Add(this.btn_buscar);
    this.Controls.Add(this.txt_num_equipo);
