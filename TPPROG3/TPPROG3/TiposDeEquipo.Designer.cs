@@ -29,10 +29,10 @@
   private void InitializeComponent()
   {
    this.lbl_tipo = new System.Windows.Forms.Label();
-   this.txt_tipo = new System.Windows.Forms.TextBox();
    this.btn_agregar = new System.Windows.Forms.Button();
    this.btn_quitar = new System.Windows.Forms.Button();
    this.grd_datos = new System.Windows.Forms.DataGridView();
+   this.txt_tipo = new System.Windows.Forms.TextBox();
    ((System.ComponentModel.ISupportInitialize)(this.grd_datos)).BeginInit();
    this.SuspendLayout();
    // 
@@ -44,13 +44,6 @@
    this.lbl_tipo.Size = new System.Drawing.Size(134, 13);
    this.lbl_tipo.TabIndex = 0;
    this.lbl_tipo.Text = "Ingrese El Tipo De Equipo:";
-   // 
-   // txt_tipo
-   // 
-   this.txt_tipo.Location = new System.Drawing.Point(145, 6);
-   this.txt_tipo.Name = "txt_tipo";
-   this.txt_tipo.Size = new System.Drawing.Size(285, 20);
-   this.txt_tipo.TabIndex = 1;
    // 
    // btn_agregar
    // 
@@ -70,15 +63,25 @@
    this.btn_quitar.TabIndex = 3;
    this.btn_quitar.Text = "Quitar Tipo De Equipo";
    this.btn_quitar.UseVisualStyleBackColor = true;
+   this.btn_quitar.Click += new System.EventHandler(this.btn_quitar_Click);
    // 
    // grd_datos
    // 
    this.grd_datos.BackgroundColor = System.Drawing.SystemColors.Control;
    this.grd_datos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
    this.grd_datos.Location = new System.Drawing.Point(8, 32);
+   this.grd_datos.MultiSelect = false;
    this.grd_datos.Name = "grd_datos";
+   this.grd_datos.ReadOnly = true;
    this.grd_datos.Size = new System.Drawing.Size(585, 346);
    this.grd_datos.TabIndex = 4;
+   // 
+   // txt_tipo
+   // 
+   this.txt_tipo.Location = new System.Drawing.Point(145, 6);
+   this.txt_tipo.Name = "txt_tipo";
+   this.txt_tipo.Size = new System.Drawing.Size(285, 20);
+   this.txt_tipo.TabIndex = 1;
    // 
    // TiposDeEquipo
    // 
@@ -96,6 +99,7 @@
    this.Name = "TiposDeEquipo";
    this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
    this.Text = "Tipos De Equipo";
+   this.Load += new System.EventHandler(this.TiposDeEquipo_Load);
    ((System.ComponentModel.ISupportInitialize)(this.grd_datos)).EndInit();
    this.ResumeLayout(false);
    this.PerformLayout();
@@ -105,9 +109,9 @@
   #endregion
 
   private System.Windows.Forms.Label lbl_tipo;
-  private System.Windows.Forms.TextBox txt_tipo;
   private System.Windows.Forms.Button btn_agregar;
   private System.Windows.Forms.Button btn_quitar;
   private System.Windows.Forms.DataGridView grd_datos;
+  private System.Windows.Forms.TextBox txt_tipo;
  }
 }

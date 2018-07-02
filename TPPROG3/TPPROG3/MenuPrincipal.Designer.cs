@@ -394,12 +394,14 @@
    this.generarToolStripMenuItem.Name = "generarToolStripMenuItem";
    this.generarToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
    this.generarToolStripMenuItem.Text = "Agregar/Quitar Detalles";
+   this.generarToolStripMenuItem.Click += new System.EventHandler(this.generarToolStripMenuItem_Click);
    // 
    // verListadoDeDetallesToolStripMenuItem
    // 
    this.verListadoDeDetallesToolStripMenuItem.Name = "verListadoDeDetallesToolStripMenuItem";
    this.verListadoDeDetallesToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
    this.verListadoDeDetallesToolStripMenuItem.Text = "Ver Listado De Detalles";
+   this.verListadoDeDetallesToolStripMenuItem.Click += new System.EventHandler(this.verListadoDeDetallesToolStripMenuItem_Click);
    // 
    // generarSalidaDeServiceToolStripMenuItem
    // 

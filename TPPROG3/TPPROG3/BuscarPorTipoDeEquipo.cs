@@ -16,5 +16,24 @@ namespace TPPROG3
   {
    InitializeComponent();
   }
+
+  private void btn_buscar_Click(object sender, EventArgs e)
+  {
+   if (cmbx_tipo.SelectedIndex < 0)
+   {
+    MessageBox.Show("Seleccione Un Tipo De Equipo");
+    return;
+   }
+   Consultas BusquedaEquipo = new Consultas();
+   string comando = BusquedaEquipo.CrearConsultaEquipo(5, 9, cmbx_tipo.SelectedItem.ToString());
+   Tablas DATA = new Tablas();
+   grd_datos.DataSource = DATA.TraerTabla(comando, "EquiposBuscados");
+  }
+
+  private void BuscarPorTipoDeEquipo_Load(object sender, EventArgs e)
+  {
+   Tablas DATA = new Tablas();
+   DATA.CargarCombobox("select * from tipos_de_equipo", 0, ref cmbx_tipo);
+  }
  }
 }

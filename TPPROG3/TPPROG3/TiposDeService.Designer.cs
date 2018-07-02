@@ -49,24 +49,28 @@
    // 
    this.txt_tipo.Location = new System.Drawing.Point(98, 9);
    this.txt_tipo.Name = "txt_tipo";
-   this.txt_tipo.Size = new System.Drawing.Size(228, 20);
+   this.txt_tipo.Size = new System.Drawing.Size(385, 20);
    this.txt_tipo.TabIndex = 1;
    // 
    // btn_agregar
    // 
    this.btn_agregar.Location = new System.Drawing.Point(98, 35);
    this.btn_agregar.Name = "btn_agregar";
-   this.btn_agregar.Size = new System.Drawing.Size(228, 23);
+   this.btn_agregar.Size = new System.Drawing.Size(385, 23);
    this.btn_agregar.TabIndex = 2;
    this.btn_agregar.Text = "Agregar";
    this.btn_agregar.UseVisualStyleBackColor = true;
+   this.btn_agregar.Click += new System.EventHandler(this.btn_agregar_Click);
    // 
    // grd_datos
    // 
+   this.grd_datos.BackgroundColor = System.Drawing.SystemColors.Control;
    this.grd_datos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
    this.grd_datos.Location = new System.Drawing.Point(8, 76);
+   this.grd_datos.MultiSelect = false;
    this.grd_datos.Name = "grd_datos";
-   this.grd_datos.Size = new System.Drawing.Size(318, 299);
+   this.grd_datos.ReadOnly = true;
+   this.grd_datos.Size = new System.Drawing.Size(475, 299);
    this.grd_datos.TabIndex = 3;
    // 
    // btn_quitar
@@ -77,12 +81,14 @@
    this.btn_quitar.TabIndex = 4;
    this.btn_quitar.Text = "Quitar";
    this.btn_quitar.UseVisualStyleBackColor = true;
+   this.btn_quitar.Click += new System.EventHandler(this.btn_quitar_Click);
    // 
    // TiposDeService
    // 
    this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
    this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-   this.ClientSize = new System.Drawing.Size(336, 413);
+   this.BackColor = System.Drawing.Color.DarkGray;
+   this.ClientSize = new System.Drawing.Size(495, 413);
    this.Controls.Add(this.btn_quitar);
    this.Controls.Add(this.grd_datos);
    this.Controls.Add(this.btn_agregar);
@@ -93,6 +99,7 @@
    this.Name = "TiposDeService";
    this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
    this.Text = "Agregar/Quitar Tipo De Service";
+   this.Load += new System.EventHandler(this.TiposDeService_Load);
    ((System.ComponentModel.ISupportInitialize)(this.grd_datos)).EndInit();
    this.ResumeLayout(false);
    this.PerformLayout();

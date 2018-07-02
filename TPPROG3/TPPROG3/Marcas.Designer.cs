@@ -57,7 +57,9 @@
    this.grd_datos.BackgroundColor = System.Drawing.SystemColors.Control;
    this.grd_datos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
    this.grd_datos.Location = new System.Drawing.Point(16, 51);
+   this.grd_datos.MultiSelect = false;
    this.grd_datos.Name = "grd_datos";
+   this.grd_datos.ReadOnly = true;
    this.grd_datos.Size = new System.Drawing.Size(573, 329);
    this.grd_datos.TabIndex = 2;
    // 
@@ -79,6 +81,7 @@
    this.btn_quitar.TabIndex = 4;
    this.btn_quitar.Text = "Quitar Marca";
    this.btn_quitar.UseVisualStyleBackColor = true;
+   this.btn_quitar.Click += new System.EventHandler(this.btn_quitar_Click);
    // 
    // Marcas
    // 
@@ -96,6 +99,7 @@
    this.Name = "Marcas";
    this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
    this.Text = "Marcas";
+   this.Load += new System.EventHandler(this.Marcas_Load);
    ((System.ComponentModel.ISupportInitialize)(this.grd_datos)).EndInit();
    this.ResumeLayout(false);
    this.PerformLayout();

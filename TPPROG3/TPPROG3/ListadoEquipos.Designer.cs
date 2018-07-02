@@ -60,6 +60,7 @@
    this.rbtn_dni.TabIndex = 2;
    this.rbtn_dni.Text = "DNI Del Dueño";
    this.rbtn_dni.UseVisualStyleBackColor = true;
+   this.rbtn_dni.CheckedChanged += new System.EventHandler(this.rbtn_dni_CheckedChanged);
    // 
    // rbtn_nequipo
    // 
@@ -70,6 +71,7 @@
    this.rbtn_nequipo.TabIndex = 1;
    this.rbtn_nequipo.Text = "Numero De Equipo";
    this.rbtn_nequipo.UseVisualStyleBackColor = true;
+   this.rbtn_nequipo.CheckedChanged += new System.EventHandler(this.rbtn_nequipo_CheckedChanged);
    // 
    // rbtn_nserie
    // 
@@ -82,6 +84,7 @@
    this.rbtn_nserie.TabStop = true;
    this.rbtn_nserie.Text = "Numero De Serie";
    this.rbtn_nserie.UseVisualStyleBackColor = true;
+   this.rbtn_nserie.CheckedChanged += new System.EventHandler(this.rbtn_nserie_CheckedChanged);
    // 
    // grd_datos
    // 
@@ -90,6 +93,7 @@
    this.grd_datos.GridColor = System.Drawing.SystemColors.Window;
    this.grd_datos.Location = new System.Drawing.Point(12, 111);
    this.grd_datos.Name = "grd_datos";
+   this.grd_datos.ReadOnly = true;
    this.grd_datos.Size = new System.Drawing.Size(984, 438);
    this.grd_datos.TabIndex = 1;
    // 
@@ -125,6 +129,7 @@
    this.Name = "ListadoEquipos";
    this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
    this.Text = "Listado De  Equipos";
+   this.Load += new System.EventHandler(this.ListadoEquipos_Load);
    this.gbx_filtros.ResumeLayout(false);
    this.gbx_filtros.PerformLayout();
    ((System.ComponentModel.ISupportInitialize)(this.grd_datos)).EndInit();
