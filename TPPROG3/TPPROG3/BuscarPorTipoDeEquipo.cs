@@ -29,5 +29,11 @@ namespace TPPROG3
    Tablas DATA = new Tablas();
    grd_datos.DataSource = DATA.TraerTabla(comando, "EquiposBuscados");
   }
+
+  private void BuscarPorTipoDeEquipo_Load(object sender, EventArgs e)
+  {
+   Tablas DATA = new Tablas();
+   DATA.CargarCombobox("select * from tipos_de_equipo", 0, ref cmbx_tipo);
+  }
  }
 }

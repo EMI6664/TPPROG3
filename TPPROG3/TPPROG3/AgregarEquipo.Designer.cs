@@ -38,9 +38,9 @@
    this.cmbx_modelo = new System.Windows.Forms.ComboBox();
    this.cmbx_marca = new System.Windows.Forms.ComboBox();
    this.cmbx_dni = new System.Windows.Forms.ComboBox();
-   this.cmbx_tipo = new System.Windows.Forms.ComboBox();
-   this.dataGridView1 = new System.Windows.Forms.DataGridView();
-   ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+   this.grd_datos = new System.Windows.Forms.DataGridView();
+   this.txt_tipo = new System.Windows.Forms.TextBox();
+   ((System.ComponentModel.ISupportInitialize)(this.grd_datos)).BeginInit();
    this.SuspendLayout();
    // 
    // lbl_num_serie
@@ -94,6 +94,7 @@
    this.txt_numero_serie.Name = "txt_numero_serie";
    this.txt_numero_serie.Size = new System.Drawing.Size(313, 20);
    this.txt_numero_serie.TabIndex = 6;
+   this.txt_numero_serie.TextChanged += new System.EventHandler(this.txt_numero_serie_TextChanged);
    // 
    // btn_agregar
    // 
@@ -107,44 +108,50 @@
    // 
    // cmbx_modelo
    // 
+   this.cmbx_modelo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
    this.cmbx_modelo.FormattingEnabled = true;
    this.cmbx_modelo.Location = new System.Drawing.Point(109, 75);
    this.cmbx_modelo.Name = "cmbx_modelo";
    this.cmbx_modelo.Size = new System.Drawing.Size(313, 21);
    this.cmbx_modelo.TabIndex = 14;
+   this.cmbx_modelo.SelectedIndexChanged += new System.EventHandler(this.cmbx_modelo_SelectedIndexChanged);
    // 
    // cmbx_marca
    // 
+   this.cmbx_marca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
    this.cmbx_marca.FormattingEnabled = true;
    this.cmbx_marca.Location = new System.Drawing.Point(109, 48);
    this.cmbx_marca.Name = "cmbx_marca";
    this.cmbx_marca.Size = new System.Drawing.Size(313, 21);
    this.cmbx_marca.TabIndex = 15;
+   this.cmbx_marca.SelectedIndexChanged += new System.EventHandler(this.cmbx_marca_SelectedIndexChanged);
    // 
    // cmbx_dni
    // 
+   this.cmbx_dni.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
    this.cmbx_dni.FormattingEnabled = true;
    this.cmbx_dni.Location = new System.Drawing.Point(547, 48);
    this.cmbx_dni.Name = "cmbx_dni";
    this.cmbx_dni.Size = new System.Drawing.Size(241, 21);
    this.cmbx_dni.TabIndex = 16;
    // 
-   // cmbx_tipo
+   // grd_datos
    // 
-   this.cmbx_tipo.FormattingEnabled = true;
-   this.cmbx_tipo.Location = new System.Drawing.Point(547, 20);
-   this.cmbx_tipo.Name = "cmbx_tipo";
-   this.cmbx_tipo.Size = new System.Drawing.Size(241, 21);
-   this.cmbx_tipo.TabIndex = 17;
+   this.grd_datos.BackgroundColor = System.Drawing.SystemColors.Control;
+   this.grd_datos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+   this.grd_datos.Location = new System.Drawing.Point(15, 110);
+   this.grd_datos.Name = "grd_datos";
+   this.grd_datos.ReadOnly = true;
+   this.grd_datos.Size = new System.Drawing.Size(773, 254);
+   this.grd_datos.TabIndex = 13;
    // 
-   // dataGridView1
+   // txt_tipo
    // 
-   this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
-   this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-   this.dataGridView1.Location = new System.Drawing.Point(15, 110);
-   this.dataGridView1.Name = "dataGridView1";
-   this.dataGridView1.Size = new System.Drawing.Size(773, 254);
-   this.dataGridView1.TabIndex = 13;
+   this.txt_tipo.Location = new System.Drawing.Point(547, 20);
+   this.txt_tipo.Name = "txt_tipo";
+   this.txt_tipo.ReadOnly = true;
+   this.txt_tipo.Size = new System.Drawing.Size(241, 20);
+   this.txt_tipo.TabIndex = 17;
    // 
    // AgregarEquipo
    // 
@@ -152,11 +159,11 @@
    this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
    this.BackColor = System.Drawing.Color.DarkGray;
    this.ClientSize = new System.Drawing.Size(800, 425);
-   this.Controls.Add(this.cmbx_tipo);
+   this.Controls.Add(this.txt_tipo);
    this.Controls.Add(this.cmbx_dni);
    this.Controls.Add(this.cmbx_marca);
    this.Controls.Add(this.cmbx_modelo);
-   this.Controls.Add(this.dataGridView1);
+   this.Controls.Add(this.grd_datos);
    this.Controls.Add(this.btn_agregar);
    this.Controls.Add(this.txt_numero_serie);
    this.Controls.Add(this.lbl_dni_dueño);
@@ -168,7 +175,8 @@
    this.MaximizeBox = false;
    this.Name = "AgregarEquipo";
    this.Text = "Agregar Equipo";
-   ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+   this.Load += new System.EventHandler(this.AgregarEquipo_Load);
+   ((System.ComponentModel.ISupportInitialize)(this.grd_datos)).EndInit();
    this.ResumeLayout(false);
    this.PerformLayout();
 
@@ -186,7 +194,7 @@
   private System.Windows.Forms.ComboBox cmbx_modelo;
   private System.Windows.Forms.ComboBox cmbx_marca;
   private System.Windows.Forms.ComboBox cmbx_dni;
-  private System.Windows.Forms.ComboBox cmbx_tipo;
-  private System.Windows.Forms.DataGridView dataGridView1;
+  private System.Windows.Forms.DataGridView grd_datos;
+  private System.Windows.Forms.TextBox txt_tipo;
  }
 }

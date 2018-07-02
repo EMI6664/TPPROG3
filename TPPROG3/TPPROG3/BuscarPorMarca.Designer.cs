@@ -76,6 +76,7 @@
    this.Name = "BuscarPorMarca";
    this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
    this.Text = "Buscar Equipo Por Marca";
+   this.Load += new System.EventHandler(this.BuscarPorMarca_Load);
    ((System.ComponentModel.ISupportInitialize)(this.grd_datos)).EndInit();
    this.ResumeLayout(false);
 

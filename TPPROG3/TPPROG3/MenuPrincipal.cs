@@ -164,6 +164,18 @@ namespace TPPROG3
    GenerarSalidaService GenerarSalida = new GenerarSalidaService();
    GenerarSalida.Show();
   }
+
+  private void generarToolStripMenuItem_Click(object sender, EventArgs e)
+  {
+   DetalleService DetalleService = new DetalleService();
+   DetalleService.Show();
+  }
+
+  private void verListadoDeDetallesToolStripMenuItem_Click(object sender, EventArgs e)
+  {
+   ListadoDetalleService ListadoService = new ListadoDetalleService();
+   ListadoService.Show();
+  }
   ////////////////////////////////////////////////////////////////
   //////////////////////////
  }

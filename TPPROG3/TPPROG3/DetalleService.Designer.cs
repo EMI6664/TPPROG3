@@ -42,16 +42,17 @@
    this.lbl_seleccion.AutoSize = true;
    this.lbl_seleccion.Location = new System.Drawing.Point(12, 24);
    this.lbl_seleccion.Name = "lbl_seleccion";
-   this.lbl_seleccion.Size = new System.Drawing.Size(194, 13);
+   this.lbl_seleccion.Size = new System.Drawing.Size(242, 13);
    this.lbl_seleccion.TabIndex = 0;
-   this.lbl_seleccion.Text = "Seleccione Un Repuesto Para Agregar:";
+   this.lbl_seleccion.Text = "Seleccione Un Repuesto Para Agregar Al Detalle:";
    // 
    // cmbx_seleccion_repuesto
    // 
+   this.cmbx_seleccion_repuesto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
    this.cmbx_seleccion_repuesto.FormattingEnabled = true;
-   this.cmbx_seleccion_repuesto.Location = new System.Drawing.Point(212, 21);
+   this.cmbx_seleccion_repuesto.Location = new System.Drawing.Point(260, 21);
    this.cmbx_seleccion_repuesto.Name = "cmbx_seleccion_repuesto";
-   this.cmbx_seleccion_repuesto.Size = new System.Drawing.Size(383, 21);
+   this.cmbx_seleccion_repuesto.Size = new System.Drawing.Size(335, 21);
    this.cmbx_seleccion_repuesto.TabIndex = 1;
    // 
    // btn_Agregar

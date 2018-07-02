@@ -40,6 +40,7 @@
    this.grd_datos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
    this.grd_datos.Location = new System.Drawing.Point(12, 46);
    this.grd_datos.Name = "grd_datos";
+   this.grd_datos.ReadOnly = true;
    this.grd_datos.Size = new System.Drawing.Size(725, 264);
    this.grd_datos.TabIndex = 11;
    // 
@@ -76,6 +77,7 @@
    this.Name = "BuscarPorTipoDeEquipo";
    this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
    this.Text = "Buscar Equipo Por Tipo";
+   this.Load += new System.EventHandler(this.BuscarPorTipoDeEquipo_Load);
    ((System.ComponentModel.ISupportInitialize)(this.grd_datos)).EndInit();
    this.ResumeLayout(false);
 
