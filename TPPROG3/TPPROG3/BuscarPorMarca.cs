@@ -34,7 +34,7 @@ namespace TPPROG3
   private void BuscarPorMarca_Load(object sender, EventArgs e)
   {
    Tablas DATA = new Tablas();
-   DATA.CargarCombobox("select * from marcas", 0, ref cmbx_marca);
+   DATA.CargarCombobox("select * from marcas where Estado=1", 0, ref cmbx_marca);
   }
  }
 }

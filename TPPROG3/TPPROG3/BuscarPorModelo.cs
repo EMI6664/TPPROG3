@@ -19,7 +19,7 @@ namespace TPPROG3
   void CargarComboboxModelo()
   {
    Tablas DATA = new Tablas();
-   DATA.CargarCombobox("select * from modelos ", 0, ref cmbx_modelo);
+   DATA.CargarCombobox("select * from modelos where Estado=1", 0, ref cmbx_modelo);
   }
   private void btn_buscar_Click(object sender, EventArgs e)
   {

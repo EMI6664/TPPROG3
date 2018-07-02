@@ -79,15 +79,15 @@ namespace TPPROG3
   {
    CargarDatos();
    Tablas DATA = new Tablas();
-   DATA.CargarCombobox("select * from marcas", 0, ref cmbx_marca);
-   DATA.CargarCombobox("select * from tipos_de_equipo", 0, ref cmbx_tipo);
+   DATA.CargarCombobox("select * from marcas where Estado=1", 0, ref cmbx_marca);
+   DATA.CargarCombobox("select * from tipos_de_equipo where Estado=1", 0, ref cmbx_tipo);
   }
 
   private void btn_quitar_Click(object sender, EventArgs e)
   {
    int registros_eliminados = 0;
    Tablas TBTipos = new Tablas();
-   registros_eliminados = TBTipos.BorrarEnDBModelos("execute dlte_modelos", "dlte_modelos", grd_datos.CurrentRow.Cells["Codigo De Modelo"].Value.ToString(), 2);
+   registros_eliminados = TBTipos.BorrarEnDBModelos("execute dlte_modelo", "dlte_modelo", grd_datos.CurrentRow.Cells["Codigo De Modelo"].Value.ToString(), 2);
    MessageBox.Show("Registros Eliminados: " + registros_eliminados.ToString());
    CargarDatos();
   }
