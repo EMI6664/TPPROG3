@@ -206,6 +206,49 @@ namespace TPPROG3
    cnDB.Close();
    return FilasCambiadas;
   }
-  /////////////////////////////////////////////////////////
- }
+        /////////////////////////////////////////////////////////AQUI VENGOO YOOOOO
+        public int CargarTablaEnDBRepuesto(string ComandoSql, string NombreSP, string CodRep, string tipo, float costo, string marca, string descripcion, int stock,int puntopedido)
+        {
+            SqlConnection cnDB = new SqlConnection("Data Source=localhost\\sqlexpress;Initial Catalog=KeplerDB;Integrated Security=True");
+            SqlCommand Comando = new SqlCommand(ComandoSql, cnDB);
+            SqlParameter SqlParametros = new SqlParameter();
+            SqlParametros = Comando.Parameters.Add("@Codrep", SqlDbType.VarChar, 10);
+            SqlParametros.Value = CodRep;
+            SqlParametros = Comando.Parameters.Add("@Tipo", SqlDbType.VarChar,30);
+            SqlParametros.Value = tipo;
+            SqlParametros = Comando.Parameters.Add("@Costo", SqlDbType.Money);
+            SqlParametros.Value = costo;
+            SqlParametros = Comando.Parameters.Add("@Marca", SqlDbType.VarChar, 30);
+            SqlParametros.Value = marca;
+            SqlParametros = Comando.Parameters.Add("@descripcion", SqlDbType.VarChar, 50);
+            SqlParametros.Value = descripcion;
+            SqlParametros = Comando.Parameters.Add("@Stock", SqlDbType.Int);
+            SqlParametros.Value = stock;
+            SqlParametros = Comando.Parameters.Add("@PuntoPedido", SqlDbType.Int);
+            SqlParametros.Value = puntopedido;
+            int FilasCambiadas = 0;
+            Comando.CommandType = CommandType.StoredProcedure;
+            Comando.CommandText = NombreSP;
+            cnDB.Open();
+            FilasCambiadas = Comando.ExecuteNonQuery();
+            cnDB.Close();
+            return FilasCambiadas;
+        }
+        public int BorrarEnDBRepuesto(string ComandoSql, string NombreSP, string codRep)
+        {
+            SqlConnection cnDB = new SqlConnection("Data Source=localhost\\sqlexpress;Initial Catalog=KeplerDB;Integrated Security=True");
+            SqlCommand Comando = new SqlCommand(ComandoSql, cnDB);
+            SqlParameter SqlParametros = new SqlParameter();
+            SqlParametros = Comando.Parameters.Add("@CodRep", SqlDbType.VarChar, 10);
+            SqlParametros.Value = codRep;
+            int FilasCambiadas = 0;
+            Comando.CommandType = CommandType.StoredProcedure;
+            Comando.CommandText = NombreSP;
+            cnDB.Open();
+            FilasCambiadas = Comando.ExecuteNonQuery();
+            cnDB.Close();
+            return FilasCambiadas;
+        }
+      
+    }
 }

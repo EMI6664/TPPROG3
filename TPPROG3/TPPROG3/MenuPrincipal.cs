@@ -176,7 +176,31 @@ namespace TPPROG3
    ListadoDetalleService ListadoService = new ListadoDetalleService();
    ListadoService.Show();
   }
-  ////////////////////////////////////////////////////////////////
-  //////////////////////////
- }
+      //Repuestos//
+        private void buscarRepuestoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BuscarRepuesto BR = new BuscarRepuesto();
+            BR.Show();
+        }
+
+        private void agregarRepuestoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AgregarRepuesto Ar = new AgregarRepuesto();
+            Ar.Show();
+        }
+
+        private void verListadoToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            ListadoRepuesto Lr = new ListadoRepuesto();
+            Lr.Show();
+        }
+
+        private void modificarRepuestosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ModificarRepuesto Mr = new ModificarRepuesto();
+            Mr.Show();
+        }
+        ////////////////////////////////////////////////////////////////
+        //////////////////////////
+    }
 }
