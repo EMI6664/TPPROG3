@@ -62,6 +62,20 @@ namespace TPPROG3
   }
    return false;
   }
-
- }
+        ///verificacion por dni
+        public bool VerificarExistenciaEnClientes(string comando, string nombre, string DNI)
+        {
+            Tablas tb = new Tablas();
+            DataTable dt = tb.TraerTabla(comando, nombre);
+            foreach (DataRow dr in dt.Rows)
+            {
+                if (dr["DNI"].ToString().Equals(DNI))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+    }
 }
+

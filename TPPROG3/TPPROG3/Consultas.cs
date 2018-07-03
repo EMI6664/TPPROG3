@@ -86,6 +86,40 @@ namespace TPPROG3
    return cadena;
   }
 
-  ////////////////////////////////////
- }
+        ///////////Filtra clientes/////////
+        public string CrearConsultaCliente(string filtro)
+        {
+            string consulta = "select * from Clientes";
+
+            switch (filtro)
+            {
+                case "0":
+                    consulta += " order by Clientes.Nombre";
+                    break;
+                case "1":
+                    consulta += " order by Clientes.Apellido";
+                    break;
+                case "2":
+                    consulta += " order by Clientes.Direccion";
+                    break;
+                case "3":
+                    consulta += " order by Clientes.Telefono";
+                    break;
+                case "4":
+                    consulta += " order by Clientes.CodPostal";
+                    break;
+                case "5":
+                    consulta += " order by Clientes.Provincia";
+                    break;
+                case "6":
+                    consulta += " order by Clientes.Ciudad";
+                    break;
+                case "7":
+                    consulta += " order by Clientes.DNI";
+                    break;
+            }
+
+            return consulta;
+        }
+    }
 }

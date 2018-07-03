@@ -249,6 +249,54 @@ namespace TPPROG3
             cnDB.Close();
             return FilasCambiadas;
         }
-      
+
+        ///////////////////////CLIENTES//////////////////////////////////
+
+        public int CargarTablaEnDBClientes(string ComandoSql, string NombreSP, string Nombre, string Apellido, string Direccion, string Telefono, string CodPostal, string Provincia, string Ciudad, string DNI)
+        {
+            SqlConnection cnDB = new SqlConnection("Data Source=localhost\\sqlexpress;Initial Catalog=KeplerDB;Integrated Security=True");
+            SqlCommand Comando = new SqlCommand(ComandoSql, cnDB);
+            SqlParameter SqlParametros = new SqlParameter();
+            SqlParametros = Comando.Parameters.Add("@Nombre", SqlDbType.VarChar, 50);
+            SqlParametros.Value = Nombre;
+            SqlParametros = Comando.Parameters.Add("@Apellido", SqlDbType.VarChar, 50);
+            SqlParametros.Value = Apellido;
+            SqlParametros = Comando.Parameters.Add("@Direccion", SqlDbType.VarChar, 50);
+            SqlParametros.Value = Direccion;
+            SqlParametros = Comando.Parameters.Add("@Telefono", SqlDbType.VarChar, 30);
+            SqlParametros.Value = Telefono;
+            SqlParametros = Comando.Parameters.Add("@CodPostal", SqlDbType.VarChar, 10);
+            SqlParametros.Value = CodPostal;
+            SqlParametros = Comando.Parameters.Add("@Provincia", SqlDbType.VarChar, 30);
+            SqlParametros.Value = Provincia;
+            SqlParametros = Comando.Parameters.Add("@Ciudad", SqlDbType.VarChar, 50);
+            SqlParametros.Value = Ciudad;
+            SqlParametros = Comando.Parameters.Add("@DNI", SqlDbType.VarChar, 20);
+            SqlParametros.Value = DNI;
+            int FilasCambiadas = 0;
+            Comando.CommandType = CommandType.StoredProcedure;
+            Comando.CommandText = NombreSP;
+            cnDB.Open();
+            FilasCambiadas = Comando.ExecuteNonQuery();
+            cnDB.Close();
+            return FilasCambiadas;
+        }
+
+        public int BorrarEnDBCliente(string ComandoSql, string NombreSP, string DNI)
+        {
+            SqlConnection cnDB = new SqlConnection("Data Source=localhost\\sqlexpress;Initial Catalog=KeplerDB;Integrated Security=True");
+            SqlCommand Comando = new SqlCommand(ComandoSql, cnDB);
+            SqlParameter SqlParametros = new SqlParameter();
+            SqlParametros = Comando.Parameters.Add("@DNI", SqlDbType.VarChar, 20);
+            SqlParametros.Value = DNI;
+            int FilasCambiadas = 0;
+            Comando.CommandType = CommandType.StoredProcedure;
+            Comando.CommandText = NombreSP;
+            cnDB.Open();
+            FilasCambiadas = Comando.ExecuteNonQuery();
+            cnDB.Close();
+            return FilasCambiadas;
+        }
+
     }
 }

@@ -200,7 +200,38 @@ namespace TPPROG3
             ModificarRepuesto Mr = new ModificarRepuesto();
             Mr.Show();
         }
-        ////////////////////////////////////////////////////////////////
-        //////////////////////////
+
+        ////////////////////////////CLIENTES////////////////////////////////////
+        
+        private void agregarClienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAgregarCli Agregar = new frmAgregarCli();
+            Agregar.Show();
+        }
+
+        private void modificarDatosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmModificarCli Modificar = new frmModificarCli();
+            Modificar.Show();
+        }
+
+        private void porNombreToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmBuscarCliXNombre BuscarNombre = new frmBuscarCliXNombre();
+            BuscarNombre.Show();
+        }
+
+        private void porNDeDNIToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmBuscarCliXDNI BuscarDNI = new frmBuscarCliXDNI();
+            BuscarDNI.Show();
+        }
+
+        private void verListadoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmVerListadoCli VerListado = new frmVerListadoCli();
+            VerListado.Show();
+        }
+        
     }
 }
