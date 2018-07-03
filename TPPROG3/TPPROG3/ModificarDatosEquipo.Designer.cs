@@ -31,10 +31,7 @@
    this.gbx_datos_equipo = new System.Windows.Forms.GroupBox();
    this.txt_numero_equipo = new System.Windows.Forms.TextBox();
    this.txt_numero_serie = new System.Windows.Forms.TextBox();
-   this.txt_marca = new System.Windows.Forms.TextBox();
-   this.txt_dni = new System.Windows.Forms.TextBox();
    this.txt_tipo = new System.Windows.Forms.TextBox();
-   this.txt_modelo = new System.Windows.Forms.TextBox();
    this.lbl_dni_dueño = new System.Windows.Forms.Label();
    this.lbl_tipo_equipo = new System.Windows.Forms.Label();
    this.lbl_modelo = new System.Windows.Forms.Label();
@@ -43,18 +40,21 @@
    this.lbl_num_equipo = new System.Windows.Forms.Label();
    this.grd_datos = new System.Windows.Forms.DataGridView();
    this.btn_asentar_cambios = new System.Windows.Forms.Button();
+   this.cmbx_marca = new System.Windows.Forms.ComboBox();
+   this.cmbx_modelo = new System.Windows.Forms.ComboBox();
+   this.cmbx_DNI = new System.Windows.Forms.ComboBox();
    this.gbx_datos_equipo.SuspendLayout();
    ((System.ComponentModel.ISupportInitialize)(this.grd_datos)).BeginInit();
    this.SuspendLayout();
    // 
    // gbx_datos_equipo
    // 
+   this.gbx_datos_equipo.Controls.Add(this.cmbx_DNI);
+   this.gbx_datos_equipo.Controls.Add(this.cmbx_modelo);
+   this.gbx_datos_equipo.Controls.Add(this.cmbx_marca);
    this.gbx_datos_equipo.Controls.Add(this.txt_numero_equipo);
    this.gbx_datos_equipo.Controls.Add(this.txt_numero_serie);
-   this.gbx_datos_equipo.Controls.Add(this.txt_marca);
-   this.gbx_datos_equipo.Controls.Add(this.txt_dni);
    this.gbx_datos_equipo.Controls.Add(this.txt_tipo);
-   this.gbx_datos_equipo.Controls.Add(this.txt_modelo);
    this.gbx_datos_equipo.Controls.Add(this.lbl_dni_dueño);
    this.gbx_datos_equipo.Controls.Add(this.lbl_tipo_equipo);
    this.gbx_datos_equipo.Controls.Add(this.lbl_modelo);
@@ -72,6 +72,7 @@
    // 
    this.txt_numero_equipo.Location = new System.Drawing.Point(112, 17);
    this.txt_numero_equipo.Name = "txt_numero_equipo";
+   this.txt_numero_equipo.ReadOnly = true;
    this.txt_numero_equipo.Size = new System.Drawing.Size(271, 20);
    this.txt_numero_equipo.TabIndex = 1;
    // 
@@ -79,36 +80,17 @@
    // 
    this.txt_numero_serie.Location = new System.Drawing.Point(112, 43);
    this.txt_numero_serie.Name = "txt_numero_serie";
+   this.txt_numero_serie.ReadOnly = true;
    this.txt_numero_serie.Size = new System.Drawing.Size(271, 20);
    this.txt_numero_serie.TabIndex = 2;
-   // 
-   // txt_marca
-   // 
-   this.txt_marca.Location = new System.Drawing.Point(112, 69);
-   this.txt_marca.Name = "txt_marca";
-   this.txt_marca.Size = new System.Drawing.Size(271, 20);
-   this.txt_marca.TabIndex = 3;
-   // 
-   // txt_dni
-   // 
-   this.txt_dni.Location = new System.Drawing.Point(479, 69);
-   this.txt_dni.Name = "txt_dni";
-   this.txt_dni.Size = new System.Drawing.Size(291, 20);
-   this.txt_dni.TabIndex = 4;
    // 
    // txt_tipo
    // 
    this.txt_tipo.Location = new System.Drawing.Point(479, 43);
    this.txt_tipo.Name = "txt_tipo";
+   this.txt_tipo.ReadOnly = true;
    this.txt_tipo.Size = new System.Drawing.Size(291, 20);
    this.txt_tipo.TabIndex = 5;
-   // 
-   // txt_modelo
-   // 
-   this.txt_modelo.Location = new System.Drawing.Point(479, 14);
-   this.txt_modelo.Name = "txt_modelo";
-   this.txt_modelo.Size = new System.Drawing.Size(291, 20);
-   this.txt_modelo.TabIndex = 6;
    // 
    // lbl_dni_dueño
    // 
@@ -172,6 +154,7 @@
    this.grd_datos.Name = "grd_datos";
    this.grd_datos.Size = new System.Drawing.Size(776, 254);
    this.grd_datos.TabIndex = 1;
+   this.grd_datos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grd_datos_CellClick);
    // 
    // btn_asentar_cambios
    // 
@@ -181,6 +164,36 @@
    this.btn_asentar_cambios.TabIndex = 2;
    this.btn_asentar_cambios.Text = "Realizar Cambios";
    this.btn_asentar_cambios.UseVisualStyleBackColor = true;
+   this.btn_asentar_cambios.Click += new System.EventHandler(this.btn_asentar_cambios_Click_1);
+   // 
+   // cmbx_marca
+   // 
+   this.cmbx_marca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+   this.cmbx_marca.FormattingEnabled = true;
+   this.cmbx_marca.Location = new System.Drawing.Point(112, 69);
+   this.cmbx_marca.Name = "cmbx_marca";
+   this.cmbx_marca.Size = new System.Drawing.Size(271, 21);
+   this.cmbx_marca.TabIndex = 6;
+   this.cmbx_marca.SelectedIndexChanged += new System.EventHandler(this.cmbx_marca_SelectedIndexChanged);
+   // 
+   // cmbx_modelo
+   // 
+   this.cmbx_modelo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+   this.cmbx_modelo.FormattingEnabled = true;
+   this.cmbx_modelo.Location = new System.Drawing.Point(479, 14);
+   this.cmbx_modelo.Name = "cmbx_modelo";
+   this.cmbx_modelo.Size = new System.Drawing.Size(291, 21);
+   this.cmbx_modelo.TabIndex = 7;
+   this.cmbx_modelo.SelectedIndexChanged += new System.EventHandler(this.cmbx_modelo_SelectedIndexChanged);
+   // 
+   // cmbx_DNI
+   // 
+   this.cmbx_DNI.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+   this.cmbx_DNI.FormattingEnabled = true;
+   this.cmbx_DNI.Location = new System.Drawing.Point(479, 69);
+   this.cmbx_DNI.Name = "cmbx_DNI";
+   this.cmbx_DNI.Size = new System.Drawing.Size(291, 21);
+   this.cmbx_DNI.TabIndex = 8;
    // 
    // ModificarDatosEquipo
    // 
@@ -195,6 +208,7 @@
    this.MinimizeBox = false;
    this.Name = "ModificarDatosEquipo";
    this.Text = "Modificar Datos De  Equipos";
+   this.Load += new System.EventHandler(this.ModificarDatosEquipo_Load_1);
    this.gbx_datos_equipo.ResumeLayout(false);
    this.gbx_datos_equipo.PerformLayout();
    ((System.ComponentModel.ISupportInitialize)(this.grd_datos)).EndInit();
@@ -213,11 +227,11 @@
   private System.Windows.Forms.Label lbl_num_equipo;
   private System.Windows.Forms.TextBox txt_numero_equipo;
   private System.Windows.Forms.TextBox txt_numero_serie;
-  private System.Windows.Forms.TextBox txt_marca;
-  private System.Windows.Forms.TextBox txt_dni;
   private System.Windows.Forms.TextBox txt_tipo;
-  private System.Windows.Forms.TextBox txt_modelo;
   private System.Windows.Forms.DataGridView grd_datos;
   private System.Windows.Forms.Button btn_asentar_cambios;
+  private System.Windows.Forms.ComboBox cmbx_DNI;
+  private System.Windows.Forms.ComboBox cmbx_modelo;
+  private System.Windows.Forms.ComboBox cmbx_marca;
  }
 }

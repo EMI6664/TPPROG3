@@ -206,8 +206,31 @@ namespace TPPROG3
    cnDB.Close();
    return FilasCambiadas;
   }
-        /////////////////////////////////////////////////////////AQUI VENGOO YOOOOO
-        public int CargarTablaEnDBRepuesto(string ComandoSql, string NombreSP, string CodRep, string tipo, float costo, string marca, string descripcion, int stock,int puntopedido)
+  public int ModificarTablaEnDBEquipos(string ComandoSql, string NombreSP, int numequipo, string codmarca, string codmodelo, string codtipo, string dni)
+  {
+   SqlConnection cnDB = new SqlConnection("Data Source=localhost\\sqlexpress;Initial Catalog=KeplerDB;Integrated Security=True");
+   SqlCommand Comando = new SqlCommand(ComandoSql, cnDB);
+   SqlParameter SqlParametros = new SqlParameter();
+   SqlParametros = Comando.Parameters.Add("@Numequipo", SqlDbType.Int);
+   SqlParametros.Value = numequipo;
+   SqlParametros = Comando.Parameters.Add("@CodMarca", SqlDbType.NChar, 10);
+   SqlParametros.Value = codmarca;
+   SqlParametros = Comando.Parameters.Add("@CodModelo", SqlDbType.NChar, 10);
+   SqlParametros.Value = codmodelo;
+   SqlParametros = Comando.Parameters.Add("@CodTipo", SqlDbType.NChar, 10);
+   SqlParametros.Value = codtipo;
+   SqlParametros = Comando.Parameters.Add("@DNI", SqlDbType.VarChar, 20);
+   SqlParametros.Value = dni;
+   int FilasCambiadas = 0;
+   Comando.CommandType = CommandType.StoredProcedure;
+   Comando.CommandText = NombreSP;
+   cnDB.Open();
+   FilasCambiadas = Comando.ExecuteNonQuery();
+   cnDB.Close();
+   return FilasCambiadas;
+  }
+  /////////////////////////////////////////////////////////AQUI VENGOO YOOOOO
+  public int CargarTablaEnDBRepuesto(string ComandoSql, string NombreSP, string CodRep, string tipo, float costo, string marca, string descripcion, int stock,int puntopedido)
         {
             SqlConnection cnDB = new SqlConnection("Data Source=localhost\\sqlexpress;Initial Catalog=KeplerDB;Integrated Security=True");
             SqlCommand Comando = new SqlCommand(ComandoSql, cnDB);
