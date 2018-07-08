@@ -229,8 +229,8 @@ namespace TPPROG3
    cnDB.Close();
    return FilasCambiadas;
   }
-  /////////////////////////////////////////////////////////AQUI VENGOO YOOOOO
-  public int CargarTablaEnDBRepuesto(string ComandoSql, string NombreSP, string CodRep, string tipo, float costo, string marca, string descripcion, int stock,int puntopedido)
+  /////////////////////////////////////////////////////////Repuestos///////////////////
+  public int CargarTablaEnDBRepuesto(string ComandoSql, string NombreSP, string CodRep, string tipo, float costo, string marca, string descripcion, int stock,int puntopedido,int estado)
         {
             SqlConnection cnDB = new SqlConnection("Data Source=localhost\\sqlexpress;Initial Catalog=KeplerDB;Integrated Security=True");
             SqlCommand Comando = new SqlCommand(ComandoSql, cnDB);
@@ -249,6 +249,8 @@ namespace TPPROG3
             SqlParametros.Value = stock;
             SqlParametros = Comando.Parameters.Add("@PuntoPedido", SqlDbType.Int);
             SqlParametros.Value = puntopedido;
+            SqlParametros = Comando.Parameters.Add("@Estado", SqlDbType.Int);
+            SqlParametros.Value = estado;
             int FilasCambiadas = 0;
             Comando.CommandType = CommandType.StoredProcedure;
             Comando.CommandText = NombreSP;
@@ -257,13 +259,15 @@ namespace TPPROG3
             cnDB.Close();
             return FilasCambiadas;
         }
-        public int BorrarEnDBRepuesto(string ComandoSql, string NombreSP, string codRep)
+        public int BorrarEnDBRepuesto(string ComandoSql, string NombreSP, string codRep,int estado)
         {
             SqlConnection cnDB = new SqlConnection("Data Source=localhost\\sqlexpress;Initial Catalog=KeplerDB;Integrated Security=True");
             SqlCommand Comando = new SqlCommand(ComandoSql, cnDB);
             SqlParameter SqlParametros = new SqlParameter();
             SqlParametros = Comando.Parameters.Add("@CodRep", SqlDbType.VarChar, 10);
             SqlParametros.Value = codRep;
+            SqlParametros = Comando.Parameters.Add("@Estado", SqlDbType.Int);
+            SqlParametros.Value = estado;
             int FilasCambiadas = 0;
             Comando.CommandType = CommandType.StoredProcedure;
             Comando.CommandText = NombreSP;

@@ -11,7 +11,7 @@ namespace TPPROG3
 {
  class Validaciones
  {
- public bool VerficarCampoNumerico(string Campo){ /////verifica que el string sea de caracter numerico, sirve para validar TextBox///////////
+ public bool VerficarCampoNumerico(string Campo){ ///verifica que el string sea de caracter numerico, si contien carcateres devuelve false//////
    for (int i = 0; i < Campo.Length; i++)
    {
     if (char.IsDigit(Campo, i) == false)

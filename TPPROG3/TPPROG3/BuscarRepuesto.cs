@@ -20,7 +20,7 @@ namespace TPPROG3
         void MostrarTodo()
              {
             Tablas Ta = new Tablas();
-            dataGridView1.DataSource = Ta.TraerTabla("select * From Repuestos", "Repuestos");
+            dataGridView1.DataSource = Ta.TraerTabla("select * From Repuestos where Estado=1", "Repuestos");
         }
 
              void conteodefilas()
@@ -31,18 +31,12 @@ namespace TPPROG3
 
              void LlenarCombobox()
              {
-                 String[] A = new String[] { "Mayor a:", "Igual a:", "Menor a:", "Empieza con:", "Es igual a:", "Contiene:", "Termina con:" };
-                 for (int i = 0; i < 7; i++)
-                 {
-                     if (i >= 0 && i <= 2)
-                     {
-                         comboBox1.Items.Add(A[i]);
-                     }
-                     else if (i >= 3 && i <= 6)
-                     {
-                         comboBox2.Items.Add(A[i]);
-                     }
-                 }
+                 String[] A = new String[] { "Empieza con:", "Es igual a:", "Termina con:" };
+                  for (int i = 0; i < 3; i++)
+                  {
+                   comboBox1.Items.Add(A[i]);
+                   comboBox2.Items.Add(A[i]);
+                  }
              }
 
 
@@ -50,73 +44,48 @@ namespace TPPROG3
              {
             
                  String A = "select * from Repuestos";
+                 if(checkBox1.Checked==true){
+                  switch (comboBox1.Text.ToString())
+                  {
+                   case "Empieza con:":
+                    A = A + " where CodRepuesto like '" + textBox1.Text + "%'" + " and Estado=1";
 
-                 switch (comboBox1.Text.ToString())
-                 {
-                     case "Mayor a:":
-                         A = A + " where CodRepuesto>" + textBox1.Text.ToString();
+                    break;
+                   case "Es igual a:":
+                    A = A + " where CodRepuesto like '%" + textBox1.Text + "%'" + " and Estado=1";
 
-                         break;
-                     case "Igual a:":
-                         A = A + " where CodRepuesto=" + textBox1.Text.ToString();
+                    break;
+                 
+                   case "Termina con:":
+                    A = A + " where CodRepuesto like '%" + textBox1.Text + "'" + " and Estado=1";
 
-                         break;
-                     case "Menor a:":
-                         A = A + " where CodRepuesto<" + textBox1.Text.ToString();
+                    break;
 
-                         break;
-
+                  }
                  }
+             
 
 
-                 if (A.CompareTo("select * from Repuestos") == 0)
+                 if (checkBox2.Checked==true)
                  {
                      switch (comboBox2.Text.ToString())
                      {
                          case "Empieza con:":
-                             A = A + " where Descripcion like '" + textBox2.Text.ToString() + "%'";
+                             A = A + " where Descripcion like '" + textBox2.Text + "%'" + " and Estado=1";
 
                              break;
                          case "Es igual a:":
-                             A = A + " where Descripcion like '" + textBox2.Text.ToString() + "'";
+                             A = A + " where Descripcion like '" + textBox2.Text + "'" + " and Estado=1";
 
-                             break;
-                         case "Contiene:":
-                             A = A + " where Descripcion like '%" + textBox2.Text.ToString() + "%'";
-
+                      
                              break;
                          case "Termina con:":
-                             A = A + " where Descripcion like '%" + textBox2.Text.ToString() + "'";
+                             A = A + " where Descripcion like '%" + textBox2.Text+ "'" + " and Estado=1";
 
                              break;
                      }
                  }
 
-
-                 else
-                 {
-                     switch (comboBox2.Text.ToString())
-                     {
-                         case "Empieza con:":
-                             A = A + " and Descripcion like '" + textBox2.Text.ToString() + "%'";
-
-                             break;
-                         case "Es igual a:":
-                             A = A + " and Descripcion like '" + textBox2.Text.ToString() + "'";
-
-                             break;
-                         case "Contiene:":
-                             A = A + " and Descripcion like '%" + textBox2.Text.ToString() + "%'";
-
-                             break;
-                         case "Termina con:":
-                             A = A + "and Descripcion like '%" + textBox2.Text.ToString() + "'";
-
-                             break;
-                     }
-                 }
-
-                 ;
                  return A;
              }
 
@@ -124,49 +93,42 @@ namespace TPPROG3
              private void button1_Click(object sender, EventArgs e)
              {
             Tablas Ta = new Tablas();
-
-
-                 if (comboBox1.SelectedItem != null || comboBox2.SelectedItem != null)
+                 if (comboBox1.SelectedIndex>=0&&checkBox1.Checked==true)
                  {
-
-                dataGridView1.DataSource = Ta.TraerTabla(Filtro(), "Repuestos");
-                     conteodefilas();
+                 if (textBox1.Text == "")
+                 {
+                  MessageBox.Show("Ingrese Un Codigo");
+                  return;
                  }
-                 else
-                 {
-                     MessageBox.Show(" no se selecciono ninguna opcion");
                  }
 
-             }
-
-             private void comboBox1_KeyPress(object sender, KeyPressEventArgs e)
-             {
-                 e.Handled = true;
-                 MessageBox.Show("no se permite efectuar cambios manualmente");
-             }
-
-             private void comboBox2_KeyPress(object sender, KeyPressEventArgs e)
-             {
-                 e.Handled = true;
-                 MessageBox.Show("no se permite efectuar cambios manualmente");
-             }
-
-             private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
-             {
-                 if (Char.IsLetter(e.KeyChar))
+                 if(comboBox2.SelectedIndex >=0 && checkBox2.Checked == true){
+                 if (textBox2.Text == "")
                  {
-                     e.Handled = true;
-                     MessageBox.Show("solo se aceptan caracteres numericos");
+                  MessageBox.Show("Ingrese Una Descripcion");
+                  return;
                  }
-             }
+                 }
+                 if(checkBox1.Checked==false&&checkBox2.Checked==false){
+                 MessageBox.Show("Seleccione Un Metodo De Filtrado");
+                 return;
+                 }
+               dataGridView1.DataSource = Ta.TraerTabla(Filtro(), "Repuestos");
+               conteodefilas();
+               return;
+              }
 
-             private void button2_Click(object sender, EventArgs e)
+
+  private void button2_Click(object sender, EventArgs e)
              {
                  MostrarTodo();
-                 comboBox1.ResetText();
+                 comboBox1.SelectedIndex=-1;
                  textBox1.ResetText();
-                 comboBox2.ResetText();
+                 comboBox2.SelectedIndex=-1;
                  textBox2.ResetText();
+                 checkBox1.Checked = false;
+                 checkBox2.Checked = false;
+                 conteodefilas();
              }
 
 private void BuscarRepuesto_Load(object sender, EventArgs e)
@@ -176,5 +138,14 @@ private void BuscarRepuesto_Load(object sender, EventArgs e)
             conteodefilas();
         }
 
-    }
+  private void checkBox1_Click(object sender, EventArgs e)
+  {
+   checkBox2.Checked = false;
+  }
+
+  private void checkBox2_Click(object sender, EventArgs e)
+  {
+   checkBox1.Checked = false;
+  }
+ }
 }

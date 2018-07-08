@@ -21,12 +21,13 @@ namespace TPPROG3
         void Mostrartodos()
         {
             Tablas Ta = new Tablas();
-            dataGridView1.DataSource = Ta.TraerTabla("select * From Repuestos", "Repuestos");
+            dataGridView1.DataSource = Ta.TraerTabla("select * From Repuestos where Estado=1", "Repuestos");
         }
 
         private void ListadoRepuesto_Load(object sender, EventArgs e)
         {
             Mostrartodos();
+            radioButton1.Checked = true;
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)

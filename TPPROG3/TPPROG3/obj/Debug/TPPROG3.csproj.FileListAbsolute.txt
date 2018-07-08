@@ -250,3 +250,15 @@ C:\Users\Emilio\Documents\Repo TPProg3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3
 C:\Users\Emilio\Documents\Repo TPProg3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.csproj.CoreCompileInputs.cache
 C:\Users\Emilio\Documents\Repo TPProg3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.exe
 C:\Users\Emilio\Documents\Repo TPProg3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.pdb
+C:\Users\Emilio\Documents\TPPROG3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.AgregarRepuesto.resources
+C:\Users\Emilio\Documents\TPPROG3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.BuscarRepuesto.resources
+C:\Users\Emilio\Documents\TPPROG3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.DetalleService.resources
+C:\Users\Emilio\Documents\TPPROG3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.frmAgregarCli.resources
+C:\Users\Emilio\Documents\TPPROG3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.frmBuscarCliXDNI.resources
+C:\Users\Emilio\Documents\TPPROG3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.frmBuscarCliXNombre.resources
+C:\Users\Emilio\Documents\TPPROG3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.frmModificarCli.resources
+C:\Users\Emilio\Documents\TPPROG3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.frmVerListadoCli.resources
+C:\Users\Emilio\Documents\TPPROG3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.GenerarSalidaService.resources
+C:\Users\Emilio\Documents\TPPROG3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.ListadoDetalleService.resources
+C:\Users\Emilio\Documents\TPPROG3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.ListadoRepuesto.resources
+C:\Users\Emilio\Documents\TPPROG3\TPPROG3\TPPROG3\TPPROG3\obj\Debug\TPPROG3.ModificarRepuesto.resources
