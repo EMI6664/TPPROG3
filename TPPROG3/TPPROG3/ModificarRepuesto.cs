@@ -52,7 +52,6 @@ namespace TPPROG3
         private void ModificarRepuesto_Load(object sender, EventArgs e)
         {
             Mostrartodos();
-         textBox1.Text = dataGridView1.CurrentRow.Cells["CodRepuesto"].Value.ToString();
         }
 
       

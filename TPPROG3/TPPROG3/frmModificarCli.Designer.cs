@@ -60,6 +60,7 @@
    this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
    this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
    this.dataGridView1.Location = new System.Drawing.Point(34, 68);
+   this.dataGridView1.MultiSelect = false;
    this.dataGridView1.Name = "dataGridView1";
    this.dataGridView1.ReadOnly = true;
    this.dataGridView1.Size = new System.Drawing.Size(644, 301);
@@ -106,6 +107,7 @@
    // 
    // comboBox1
    // 
+   this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
    this.comboBox1.FormattingEnabled = true;
    this.comboBox1.Items.AddRange(new object[] {
             "Nombre",
@@ -145,6 +147,7 @@
    // 
    this.txtDNI.Location = new System.Drawing.Point(779, 302);
    this.txtDNI.Name = "txtDNI";
+   this.txtDNI.ReadOnly = true;
    this.txtDNI.Size = new System.Drawing.Size(269, 20);
    this.txtDNI.TabIndex = 31;
    // 

@@ -20,7 +20,7 @@ namespace TPPROG3
 
         void MostrarClientes()
         {
-            string comando = "Select Nombre,Apellido,Direccion,Telefono,Codpostal as 'Codigo Postal', Provincia, Ciudad,DNI from Clientes";
+            string comando = "Select Nombre,Apellido,Direccion,Telefono,Codpostal as 'Codigo Postal', Provincia, Ciudad,DNI from Clientes where Estado=1";
             Tablas DATA = new Tablas();
             dataGridView1.DataSource = DATA.TraerTabla(comando, "Clientes");
         }
@@ -30,10 +30,6 @@ namespace TPPROG3
             MostrarClientes();
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -46,50 +42,49 @@ namespace TPPROG3
         private void btnBaja_Click(object sender, EventArgs e)
         {
             Tablas Data = new Tablas();
-            string A = dataGridView1.SelectedRows[0].Cells[7].Value.ToString();
+            string A = dataGridView1.CurrentRow.Cells[7].Value.ToString();
             int Reg_ag = 0;
-            Reg_ag = Data.BorrarEnDBCliente("Execute dltCli", "dltCli", A);
+            Reg_ag = Data.BorrarEnDBCliente("Execute dltCli", "dltCli", A,2);
             MessageBox.Show("Cliente Borrado Satisfactoriamente");
             MostrarClientes();
         }
 
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            txtNom.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
-            txtApe.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
-            txtDir.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
-            txtTel.Text = dataGridView1.SelectedRows[0].Cells[3].Value.ToString();
-            txtCP.Text = dataGridView1.SelectedRows[0].Cells[4].Value.ToString();
-            txtProv.Text = dataGridView1.SelectedRows[0].Cells[5].Value.ToString();
-            txtCiu.Text = dataGridView1.SelectedRows[0].Cells[6].Value.ToString();
-            txtDNI.Text = dataGridView1.SelectedRows[0].Cells[7].Value.ToString();
+            txtNom.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            txtApe.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            txtDir.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            txtTel.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+            txtCP.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+            txtProv.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
+            txtCiu.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
+            txtDNI.Text = dataGridView1.CurrentRow.Cells[7].Value.ToString();
         }
 
-        private void btnCargar_Click(object sender, EventArgs e)
+
+  private void label2_Click(object sender, EventArgs e)
+  {
+
+  }
+
+
+  private void btnCargar_Click(object sender, EventArgs e)
         {
             Tablas Data = new Tablas();
-            int Reg_ag = Data.CargarTablaEnDBClientes("execute modCli", "modCli", txtNom.Text, txtApe.Text, txtDir.Text, txtTel.Text, txtCP.Text, txtProv.Text, txtCiu.Text, txtDNI.Text);
             if(txtNom.Text == "")
             {
                 MessageBox.Show("Seleccione un cliente a modificar");
+                return;
             }
             else
             {
+            int Reg_ag = Data.CargarTablaEnDBClientes("execute modCli", "modCli", txtNom.Text, txtApe.Text, txtDir.Text, txtTel.Text, txtCP.Text, txtProv.Text, txtCiu.Text, txtDNI.Text,1);
             MessageBox.Show("Cliente Modificado Satisfactoriamente");
-            }
+                    }
             
             MostrarClientes();
             txtNom.Text = txtApe.Text = txtDir.Text = txtTel.Text = txtCP.Text = txtProv.Text = txtCiu.Text = txtDNI.Text = "";
         }
-        /*
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            if (comboBox1.SelectedIndex < 0)
-            {
-                MessageBox.Show("Seleccione Una Marca");
-                return;
-            }
-        }
-        */
+    
     }
 }

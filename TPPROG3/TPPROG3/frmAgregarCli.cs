@@ -40,7 +40,7 @@ namespace TPPROG3
 
             ///
             Tablas Data = new Tablas();
-            added_reg = Data.CargarTablaEnDBClientes("execute insrt_clientes", "insrt_clientes", txtNom.Text, txtApe.Text, txtDir.Text, txtTel.Text, txtCP.Text, txtProv.Text, txtCiu.Text, txtDNI.Text);
+            added_reg = Data.CargarTablaEnDBClientes("execute insrt_clientes", "insrt_clientes", txtNom.Text, txtApe.Text, txtDir.Text, txtTel.Text, txtCP.Text, txtProv.Text, txtCiu.Text, txtDNI.Text,1);
             MessageBox.Show("Cliente Agregado Satisfactoriamente");
             txtNom.Text = txtApe.Text = txtDir.Text = txtTel.Text = txtCP.Text = txtProv.Text = txtCiu.Text = txtDNI.Text = "";
             return;

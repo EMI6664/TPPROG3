@@ -55,6 +55,7 @@ namespace TPPROG3
    return Random;
   }
 
+
   public bool VerificarLongitudString(string cadena,int longitud){///////devuelve true si la longitud de la cadena excede la cantidad de caracteres especificada////
 
   if(cadena.Length>longitud){

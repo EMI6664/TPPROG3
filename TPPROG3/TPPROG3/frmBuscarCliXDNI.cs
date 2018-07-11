@@ -21,7 +21,7 @@ namespace TPPROG3
         {
             Tablas DATA = new Tablas();
             DataTable dt = new DataTable();
-            string comando = "select * from Clientes where DNI = '" + textBox1.Text.ToString() + "'";
+            string comando = "select * from Clientes where DNI = '" + textBox1.Text.ToString() + "'"+" and Estado=1";
             dt = DATA.TraerTabla(comando, "Clientes");
 
             List<String> celda = new List<String>();

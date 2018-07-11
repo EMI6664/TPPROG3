@@ -27,6 +27,18 @@ namespace TPPROG3
 
   }
 
+  public static int lectura = 0;
+  public static int escritura = 0;
+  public static string usuario = "";
+  public bool VerificarLogin(string nombre){
+  if(nombre==""){
+    MessageBox.Show("Inicie Sesion Para Continuar");
+    return false;
+  }
+   return true;
+  }
+
+
   private void acercaDeToolStripMenuItem_Click(object sender, EventArgs e)
   {
    AcercaDe Acerca = new AcercaDe();
@@ -72,6 +84,13 @@ namespace TPPROG3
 
   private void agregarQuitarMarcasToolStripMenuItem_Click(object sender, EventArgs e)
   {
+  if (VerificarLogin(usuario)==false){
+    return;
+  }
+   if(escritura!=1){
+    MessageBox.Show("Acceso Denegado");
+    return;
+   }
    Marcas Marca = new Marcas();
    Marca.Show();
   }

@@ -230,7 +230,7 @@ namespace TPPROG3
    return FilasCambiadas;
   }
   /////////////////////////////////////////////////////////Repuestos///////////////////
-  public int CargarTablaEnDBRepuesto(string ComandoSql, string NombreSP, string CodRep, string tipo, float costo, string marca, string descripcion, int stock,int puntopedido,int estado)
+  public int CargarTablaEnDBRepuesto(string ComandoSql, string NombreSP, string CodRep, string tipo, float costo, string marca, string descripcion, int stock,int puntopedido,int estado)/////sirve para cargar o modificar datos en la tabla repuestos
         {
             SqlConnection cnDB = new SqlConnection("Data Source=localhost\\sqlexpress;Initial Catalog=KeplerDB;Integrated Security=True");
             SqlCommand Comando = new SqlCommand(ComandoSql, cnDB);
@@ -279,7 +279,7 @@ namespace TPPROG3
 
         ///////////////////////CLIENTES//////////////////////////////////
 
-        public int CargarTablaEnDBClientes(string ComandoSql, string NombreSP, string Nombre, string Apellido, string Direccion, string Telefono, string CodPostal, string Provincia, string Ciudad, string DNI)
+        public int CargarTablaEnDBClientes(string ComandoSql, string NombreSP, string Nombre, string Apellido, string Direccion, string Telefono, string CodPostal, string Provincia, string Ciudad, string DNI,int estado)////sirve para cargar o modificar datos en la tabla clientes
         {
             SqlConnection cnDB = new SqlConnection("Data Source=localhost\\sqlexpress;Initial Catalog=KeplerDB;Integrated Security=True");
             SqlCommand Comando = new SqlCommand(ComandoSql, cnDB);
@@ -300,6 +300,8 @@ namespace TPPROG3
             SqlParametros.Value = Ciudad;
             SqlParametros = Comando.Parameters.Add("@DNI", SqlDbType.VarChar, 20);
             SqlParametros.Value = DNI;
+            SqlParametros = Comando.Parameters.Add("@Estado", SqlDbType.Int);
+            SqlParametros.Value = estado;
             int FilasCambiadas = 0;
             Comando.CommandType = CommandType.StoredProcedure;
             Comando.CommandText = NombreSP;
@@ -309,13 +311,15 @@ namespace TPPROG3
             return FilasCambiadas;
         }
 
-        public int BorrarEnDBCliente(string ComandoSql, string NombreSP, string DNI)
+        public int BorrarEnDBCliente(string ComandoSql, string NombreSP, string DNI,int estado)
         {
             SqlConnection cnDB = new SqlConnection("Data Source=localhost\\sqlexpress;Initial Catalog=KeplerDB;Integrated Security=True");
             SqlCommand Comando = new SqlCommand(ComandoSql, cnDB);
             SqlParameter SqlParametros = new SqlParameter();
             SqlParametros = Comando.Parameters.Add("@DNI", SqlDbType.VarChar, 20);
             SqlParametros.Value = DNI;
+            SqlParametros = Comando.Parameters.Add("@Estado", SqlDbType.Int);
+            SqlParametros.Value = estado;
             int FilasCambiadas = 0;
             Comando.CommandType = CommandType.StoredProcedure;
             Comando.CommandText = NombreSP;
@@ -325,5 +329,75 @@ namespace TPPROG3
             return FilasCambiadas;
         }
 
-    }
+  //////////////////////////////////usuarios/////////////////////////////
+  public int InsertarEnDbUsuarios(string ComandoSql, string NombreSP,string codusuario, string nombre, string password,int lectura,int escritura,int admin,int estado)
+  {
+   SqlConnection cnDB = new SqlConnection("Data Source=localhost\\sqlexpress;Initial Catalog=KeplerDB;Integrated Security=True");
+   SqlCommand Comando = new SqlCommand(ComandoSql, cnDB);
+   SqlParameter SqlParametros = new SqlParameter();
+   SqlParametros = Comando.Parameters.Add("@CodUsuario", SqlDbType.NChar, 10);
+   SqlParametros.Value = codusuario;
+   SqlParametros = Comando.Parameters.Add("@Nombre", SqlDbType.VarChar,20);
+   SqlParametros.Value = nombre;
+   SqlParametros = Comando.Parameters.Add("@Permiso_Lectura", SqlDbType.Int);
+   SqlParametros.Value = lectura;
+   SqlParametros = Comando.Parameters.Add("@Permiso_Escritura", SqlDbType.Int);
+   SqlParametros.Value = escritura;
+   SqlParametros = Comando.Parameters.Add("@Status_Admin", SqlDbType.Int);
+   SqlParametros.Value = admin;
+   SqlParametros = Comando.Parameters.Add("@Password", SqlDbType.VarChar,10);
+   SqlParametros.Value = password;
+   SqlParametros = Comando.Parameters.Add("@Estado", SqlDbType.Int);
+   SqlParametros.Value = estado;
+   int FilasCambiadas = 0;
+   Comando.CommandType = CommandType.StoredProcedure;
+   Comando.CommandText = NombreSP;
+   cnDB.Open();
+   FilasCambiadas = Comando.ExecuteNonQuery();
+   cnDB.Close();
+   return FilasCambiadas;
+  }
+
+
+  public int BorrarEnDBUsuarios(string ComandoSql, string NombreSP, string codusuario, int estado)
+  {
+   SqlConnection cnDB = new SqlConnection("Data Source=localhost\\sqlexpress;Initial Catalog=KeplerDB;Integrated Security=True");
+   SqlCommand Comando = new SqlCommand(ComandoSql, cnDB);
+   SqlParameter SqlParametros = new SqlParameter();
+   SqlParametros = Comando.Parameters.Add("@CodUsuario", SqlDbType.NChar, 10);
+   SqlParametros.Value = codusuario;
+   SqlParametros = Comando.Parameters.Add("@Estado", SqlDbType.Int);
+   SqlParametros.Value = estado;
+   int FilasCambiadas = 0;
+   Comando.CommandType = CommandType.StoredProcedure;
+   Comando.CommandText = NombreSP;
+   cnDB.Open();
+   FilasCambiadas = Comando.ExecuteNonQuery();
+   cnDB.Close();
+   return FilasCambiadas;
+  }
+
+  public int ModificarEnDbUsuarios(string ComandoSql, string NombreSP, string codusuario, int lectura, int escritura, int admin)
+  {
+   SqlConnection cnDB = new SqlConnection("Data Source=localhost\\sqlexpress;Initial Catalog=KeplerDB;Integrated Security=True");
+   SqlCommand Comando = new SqlCommand(ComandoSql, cnDB);
+   SqlParameter SqlParametros = new SqlParameter();
+   SqlParametros = Comando.Parameters.Add("@CodUsuario", SqlDbType.NChar, 10);
+   SqlParametros.Value = codusuario;
+   SqlParametros = Comando.Parameters.Add("@Permiso_Lectura", SqlDbType.Int);
+   SqlParametros.Value = lectura;
+   SqlParametros = Comando.Parameters.Add("@Permiso_Escritura", SqlDbType.Int);
+   SqlParametros.Value = escritura;
+   SqlParametros = Comando.Parameters.Add("@Status_Admin", SqlDbType.Int);
+   SqlParametros.Value = admin;
+   int FilasCambiadas = 0;
+   Comando.CommandType = CommandType.StoredProcedure;
+   Comando.CommandText = NombreSP;
+   cnDB.Open();
+   FilasCambiadas = Comando.ExecuteNonQuery();
+   cnDB.Close();
+   return FilasCambiadas;
+  }
+  ///////////////////////////////////////////////////////////////////////
+ }
 }

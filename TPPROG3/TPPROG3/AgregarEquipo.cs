@@ -18,7 +18,8 @@ namespace TPPROG3
   }
   void CargarDatos()
   {
-   string comando = "Select Nserie as 'Numero De Serie',Nequipo as 'Numero De Equipo',Marca as 'Codigo De Marca',Modelo as 'Codigo De Modelo',Tipo as 'Codigo De Tipo De Equipo',DNIdueño as 'DNI Del Dueño' from Equipos";
+   Consultas BusquedaEquipo = new Consultas();
+   string comando = BusquedaEquipo.CrearConsultaEquipo(0, 0, "");
    Tablas DATA = new Tablas();
    grd_datos.DataSource = DATA.TraerTabla(comando, "Equipos");
   }

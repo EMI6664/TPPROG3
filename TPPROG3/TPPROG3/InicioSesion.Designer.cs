@@ -31,7 +31,7 @@
    this.cmbx_usuario = new System.Windows.Forms.ComboBox();
    this.lbl_usuario = new System.Windows.Forms.Label();
    this.lbl_password = new System.Windows.Forms.Label();
-   this.textBox1 = new System.Windows.Forms.TextBox();
+   this.txt_password = new System.Windows.Forms.TextBox();
    this.btn_ingresar = new System.Windows.Forms.Button();
    this.SuspendLayout();
    // 
@@ -62,13 +62,13 @@
    this.lbl_password.TabIndex = 2;
    this.lbl_password.Text = "Ingrese La Clave De Usuario:";
    // 
-   // textBox1
+   // txt_password
    // 
-   this.textBox1.Location = new System.Drawing.Point(191, 63);
-   this.textBox1.Name = "textBox1";
-   this.textBox1.PasswordChar = '#';
-   this.textBox1.Size = new System.Drawing.Size(217, 20);
-   this.textBox1.TabIndex = 3;
+   this.txt_password.Location = new System.Drawing.Point(191, 63);
+   this.txt_password.Name = "txt_password";
+   this.txt_password.PasswordChar = '#';
+   this.txt_password.Size = new System.Drawing.Size(217, 20);
+   this.txt_password.TabIndex = 3;
    // 
    // btn_ingresar
    // 
@@ -78,6 +78,7 @@
    this.btn_ingresar.TabIndex = 4;
    this.btn_ingresar.Text = "Iniciar Sesion";
    this.btn_ingresar.UseVisualStyleBackColor = true;
+   this.btn_ingresar.Click += new System.EventHandler(this.btn_ingresar_Click);
    // 
    // InicioSesion
    // 
@@ -86,7 +87,7 @@
    this.BackColor = System.Drawing.Color.DarkGray;
    this.ClientSize = new System.Drawing.Size(432, 141);
    this.Controls.Add(this.btn_ingresar);
-   this.Controls.Add(this.textBox1);
+   this.Controls.Add(this.txt_password);
    this.Controls.Add(this.lbl_password);
    this.Controls.Add(this.lbl_usuario);
    this.Controls.Add(this.cmbx_usuario);
@@ -96,6 +97,7 @@
    this.Name = "InicioSesion";
    this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
    this.Text = "Inicio De Sesion";
+   this.Load += new System.EventHandler(this.InicioSesion_Load);
    this.ResumeLayout(false);
    this.PerformLayout();
 
@@ -106,7 +108,7 @@
   private System.Windows.Forms.ComboBox cmbx_usuario;
   private System.Windows.Forms.Label lbl_usuario;
   private System.Windows.Forms.Label lbl_password;
-  private System.Windows.Forms.TextBox textBox1;
+  private System.Windows.Forms.TextBox txt_password;
   private System.Windows.Forms.Button btn_ingresar;
  }
 }

@@ -121,5 +121,29 @@ namespace TPPROG3
 
             return consulta;
         }
-    }
+
+///////Usuarios/////////////////////
+  public string ObtenerPasswordUsuario(string Nombre)
+  {////////obtiene el codigo de marca a partir su nombre///////
+   Tablas Tabla = new Tablas();
+   string comando = "select Password from Usuarios where Nombre=" + "'" + Nombre + "'" + " and Estado=1";
+   string cadena = Tabla.BuscarCampo(comando);
+   return cadena;
+  }
+  public int ObtenerPermisoLectura(string Nombre)
+  {////////obtiene el codigo de marca a partir su nombre///////
+   Tablas Tabla = new Tablas();
+   string comando = "select Permiso_Lectura from Usuarios where Nombre=" + "'" + Nombre + "'" + " and Estado=1";
+   string cadena = Tabla.BuscarCampo(comando);
+   return Int32.Parse(cadena);
+  }
+  public int ObtenerPermisoEscritura(string Nombre)
+  {////////obtiene el codigo de marca a partir su nombre///////
+   Tablas Tabla = new Tablas();
+   string comando = "select Permiso_Escritura from Usuarios where Nombre=" + "'" + Nombre + "'" + " and Estado=1";
+   string cadena = Tabla.BuscarCampo(comando);
+   return Int32.Parse(cadena);
+  }
+  /////////////////////////////////////
+ }
 }

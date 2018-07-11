@@ -33,6 +33,7 @@
    this.rbDESC = new System.Windows.Forms.RadioButton();
    this.rbASC = new System.Windows.Forms.RadioButton();
    this.lblCant = new System.Windows.Forms.Label();
+   this.lblcant_num = new System.Windows.Forms.Label();
    ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
    this.gboxFiltrar.SuspendLayout();
    this.SuspendLayout();
@@ -43,12 +44,13 @@
    this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
    this.dataGridView1.Location = new System.Drawing.Point(29, 87);
    this.dataGridView1.Name = "dataGridView1";
+   this.dataGridView1.ReadOnly = true;
    this.dataGridView1.Size = new System.Drawing.Size(930, 296);
    this.dataGridView1.TabIndex = 0;
    // 
    // gboxFiltrar
    // 
-   this.gboxFiltrar.BackColor = System.Drawing.SystemColors.ControlDark;
+   this.gboxFiltrar.BackColor = System.Drawing.Color.DarkGray;
    this.gboxFiltrar.Controls.Add(this.rbDESC);
    this.gboxFiltrar.Controls.Add(this.rbASC);
    this.gboxFiltrar.Location = new System.Drawing.Point(29, 12);
@@ -91,12 +93,21 @@
    this.lblCant.TabIndex = 2;
    this.lblCant.Text = "Cantidad Total de Clientes:";
    // 
+   // lblcant_num
+   // 
+   this.lblcant_num.AutoSize = true;
+   this.lblcant_num.Location = new System.Drawing.Point(396, 408);
+   this.lblcant_num.Name = "lblcant_num";
+   this.lblcant_num.Size = new System.Drawing.Size(0, 13);
+   this.lblcant_num.TabIndex = 3;
+   // 
    // frmVerListadoCli
    // 
    this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
    this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
    this.BackColor = System.Drawing.Color.DarkGray;
    this.ClientSize = new System.Drawing.Size(971, 444);
+   this.Controls.Add(this.lblcant_num);
    this.Controls.Add(this.lblCant);
    this.Controls.Add(this.gboxFiltrar);
    this.Controls.Add(this.dataGridView1);
@@ -121,5 +132,6 @@
         private System.Windows.Forms.RadioButton rbDESC;
         private System.Windows.Forms.RadioButton rbASC;
         private System.Windows.Forms.Label lblCant;
-    }
+  private System.Windows.Forms.Label lblcant_num;
+ }
 }

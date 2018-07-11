@@ -112,7 +112,6 @@ namespace TPPROG3
   private void ModificarDatosEquipo_Load_1(object sender, EventArgs e)
   {
    CargarDatos();
-   CargarNumEquipo();
    CargarComboboxMarca();
    CargarComboboxDNI();
   }

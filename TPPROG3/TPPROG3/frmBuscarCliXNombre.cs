@@ -20,7 +20,7 @@ namespace TPPROG3
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             Tablas DATA = new Tablas();
-            string comando = "select * from Clientes where Nombre = '" + textBox1.Text.ToString() + "'";
+            string comando = "select * from Clientes where Nombre = '" + textBox1.Text.ToString() + "'"+ " and Estado=1";
             dataGridView1.DataSource = DATA.TraerTabla(comando, "Clientes");
         }
 
